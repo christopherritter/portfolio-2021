@@ -3,28 +3,28 @@ export const projects = [{
     subtitle: "Adobe XD and Pattern Lab",
     description: "Redesigned elements of Find Your Calling to focus on educational institutions.",
     image: "./img/FYC.png",
-    link: "https://www.findyourcalling.com/",
+    link: "https://findyourcalling.com/",
   },
   {
     title: "Jenzabar ICS 9",
     subtitle: "Bootstrap and jQuery",
     description: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
     image: "./img/JICS9.png",
-    link: "https://reactbootcamp.com",
+    link: "https://jenzabar.com",
   },
   {
     title: "Jenzabar CX 10",
     subtitle: "QT Creator",
     description: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
     image: "./img/CX10.png",
-    link: "https://reactbootcamp.com",
+    link: "https://jenzabar.com",
   },
   {
     title: "Jenzabar JX",
     subtitle: "SmartGWT",
     description: "Created prototype to demonstrate user interactions and responsive layouts.",
     image: "./img/JX.png",
-    link: "https://reactbootcamp.com",
+    link: "https://jenzabar.com",
   },
 ];
 
