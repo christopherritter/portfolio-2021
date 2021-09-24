@@ -1,0 +1,62 @@
+import React from "react";
+import {
+  AcademicCapIcon as SchoolIcon,
+  StarIcon,
+  BriefcaseIcon as WorkIcon,
+  CalendarIcon,
+} from "@heroicons/react/solid";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { employers } from "../data";
+
+export default function Timeline() {
+  return (
+    <section id="timeline">
+      <div className="container px-5 py-10 mx-auto">
+        <div className="text-center">
+          <CalendarIcon className="w-10 inline-block mb-4" />
+          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
+            Experience
+          </h1>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
+            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
+            fuga dolore.
+          </p>  
+        </div>
+        <div className="flex flex-wrap m-4">
+          <VerticalTimeline>
+            {employers &&
+              employers.map((employer, index) => (
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date={ employer.startDate + " - " + employer.endDate }
+                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  icon={<WorkIcon />}
+                  key={index}
+                >
+                  <h3 className="vertical-timeline-element-title">
+                    { employer.name }
+                  </h3>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    { employer.location }
+                  </h4>
+                  <p>
+                    { employer.title }
+                  </p>
+                </VerticalTimelineElement>
+              ))}
+
+            <VerticalTimelineElement
+              iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+              icon={<StarIcon />}
+            />
+          </VerticalTimeline>
+        </div>
+      </div>
+    </section>
+  );
+}
