@@ -14,7 +14,7 @@ import { employers } from "../data";
 
 export default function Timeline() {
   return (
-    <section id="timeline">
+    <section id="experience">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center">
           <CalendarIcon className="w-10 inline-block mb-4" />
@@ -28,13 +28,13 @@ export default function Timeline() {
           </p>  
         </div>
         <div className="flex flex-wrap m-4">
-          <VerticalTimeline>
+          <VerticalTimeline className="vertical-timeline vertical-timeline-custom-line">
             {employers &&
               employers.map((employer, index) => (
                 <VerticalTimelineElement
-                  className="vertical-timeline-element--work"
+                  className="vertical-timeline-element-custom-content vertical-timeline-custom-bg vertical-timeline-element--work"
                   date={ employer.startDate + " - " + employer.endDate }
-                  iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                  iconStyle={{ background: 'rgb(52, 211, 153)', color: '#1F2937' }}
                   icon={<WorkIcon />}
                   key={index}
                 >
@@ -47,11 +47,18 @@ export default function Timeline() {
                   <p>
                     { employer.title }
                   </p>
+                  <ul>
+                    { employer.projects && employer.projects.map((project, index) => (
+                      <li className="vertical-timeline-element-list-item" key={index}>
+                        { project.description }
+                      </li>
+                    ))}
+                  </ul>
                 </VerticalTimelineElement>
               ))}
 
             <VerticalTimelineElement
-              iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+              iconStyle={{ background: '#fff', color: '#1F2937' }}
               icon={<StarIcon />}
             />
           </VerticalTimeline>
