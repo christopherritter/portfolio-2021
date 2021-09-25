@@ -33,7 +33,7 @@ export default function Timeline() {
               employers.map((employer, index) => (
                 <VerticalTimelineElement
                   className="vertical-timeline-element-custom-content vertical-timeline-custom-bg vertical-timeline-element--work"
-                  date={ employer.startDate + " - " + employer.endDate }
+                  date={ employer.startDate === employer.endDate ? employer.startDate : `${employer.startDate} - ${employer.endDate}` }
                   iconStyle={{ background: 'rgb(52, 211, 153)', color: '#1F2937' }}
                   icon={<WorkIcon />}
                   key={index}
