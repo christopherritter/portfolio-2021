@@ -34,7 +34,12 @@
   border-right: 7px solid rgb(31, 41, 55);
 }
 
-.vertical-timeline-element-custom-content .vertical-timeline-element-list-item {
-  list-style: circle;
-  margin: .25em 0 .5em 1.25em;
+ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-item::before {
+  content: "\25CF"; 
+  color: rgb(107, 114, 128);
+  font-weight: bold;
+  font-size: 1em;
+  display: inline-block;
+  width: 1.15em;
+  margin-top: 0.5em;
 }

@@ -25,7 +25,7 @@ export default function Timeline() {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
             facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
             fuga dolore.
-          </p>  
+          </p>
         </div>
         <div className="flex flex-wrap m-4">
           <VerticalTimeline className="vertical-timeline vertical-timeline-custom-line">
@@ -33,32 +33,62 @@ export default function Timeline() {
               employers.map((employer, index) => (
                 <VerticalTimelineElement
                   className="vertical-timeline-element-custom-content vertical-timeline-custom-bg vertical-timeline-element--work"
-                  date={ employer.startDate === employer.endDate ? employer.startDate : `${employer.startDate} - ${employer.endDate}` }
-                  iconStyle={{ background: 'rgb(52, 211, 153)', color: '#1F2937' }}
+                  date={
+                    employer.startDate === employer.endDate
+                      ? employer.startDate
+                      : `${employer.startDate} - ${employer.endDate}`
+                  }
+                  iconStyle={{
+                    background: "rgb(52, 211, 153)",
+                    color: "#1F2937",
+                  }}
                   icon={<WorkIcon />}
                   key={index}
                 >
-                  <h3 className="vertical-timeline-element-title">
-                    { employer.name }
+                  <h3 className="text-lg font-medium text-white">
+                    {employer.name}
                   </h3>
-                  <h4 className="vertical-timeline-element-subtitle">
-                    { employer.location }
+                  <h4 className="text-base font-normal text-gray-400">
+                    {employer.location}
                   </h4>
-                  <p>
-                    { employer.title }
+                  <p className="text-base font-normal text-gray-100">
+                    {employer.title}
                   </p>
-                  <ul>
-                    { employer.projects && employer.projects.map((project, index) => (
-                      <li className="vertical-timeline-element-list-item" key={index}>
-                        { project.description }
-                      </li>
-                    ))}
-                  </ul>
+                  {employer.projects &&
+                    employer.projects.map((project, projectIndex) => {
+                      if (project.tasks) {
+                        return (
+                          <ul
+                            className="vertical-timeline-element-custom-content"
+                            key={projectIndex}
+                          >
+                            {project.tasks.map((task, index) => {
+                              return (
+                                <li
+                                  className="vertical-timeline-element-list-item text-gray-100"
+                                  key={index}
+                                >
+                                  {task.description}
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        );
+                      } else {
+                        return (
+                          <ul className="vertical-timeline-element-custom-content">
+                            <li className="vertical-timeline-element-list-item">
+                              No projects found.
+                            </li>
+                          </ul>
+                        );
+                      }
+                    })}
                 </VerticalTimelineElement>
               ))}
 
             <VerticalTimelineElement
-              iconStyle={{ background: '#fff', color: '#1F2937' }}
+              iconStyle={{ background: "#fff", color: "#1F2937" }}
               icon={<StarIcon />}
             />
           </VerticalTimeline>

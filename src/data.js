@@ -4,6 +4,7 @@ export const employers = [
     name: "Jenzabar, Inc.",
     startDate: 2015,
     endDate: "Now",
+    location: "Blue Ash, Ohio",
     projects: [{
         name: "Find Your Calling",
         img: "/img/FYC.png",
