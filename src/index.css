@@ -35,8 +35,8 @@
 }
 
 ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-item::before {
-  content: "\00BB"; 
-  color: rgb(52, 211, 153);
+  content: "\00BB";
+  color: rgb(156, 163, 175);
   font-weight: bold;
   font-size: 1em;
   display: inline-block;
@@ -50,4 +50,16 @@ ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-it
 
 .vertical-timeline-element-list-item.vertical-timeline-element-clickable-list-item:hover {
   color: rgb(52, 211, 153);
+}
+
+.project-cards {
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1280px) {
+  .project-cards {
+    margin: 0.5rem;
+    width: calc(50% - 1rem);
+  }
 }

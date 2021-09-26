@@ -67,9 +67,9 @@ export default function Timeline(props) {
                             {project.tasks.map((task, index) => {
                               return (
                                 <li
-                                  className="vertical-timeline-element-list-item text-gray-100 vertical-timeline-element-clickable-list-item"
+                                  className="vertical-timeline-element-list-item text-gray-100"
                                   key={index}
-                                  onClick={() => { console.log("clicked"); setShowModal(true); }}
+                                  // onClick={() => { console.log("clicked"); setShowModal(true); }}
                                 >
                                   {task.description}
                                 </li>
