@@ -12,7 +12,9 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { employers } from "../data";
 
-export default function Timeline() {
+export default function Timeline(props) {
+  const { setShowModal } = props;
+
   return (
     <section id="experience">
       <div className="container px-5 py-10 mx-auto">
@@ -65,8 +67,9 @@ export default function Timeline() {
                             {project.tasks.map((task, index) => {
                               return (
                                 <li
-                                  className="vertical-timeline-element-list-item text-gray-100"
+                                  className="vertical-timeline-element-list-item text-gray-100 vertical-timeline-element-clickable-list-item"
                                   key={index}
+                                  onClick={() => { console.log("clicked"); setShowModal(true); }}
                                 >
                                   {task.description}
                                 </li>

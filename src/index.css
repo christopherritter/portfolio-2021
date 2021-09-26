@@ -35,11 +35,19 @@
 }
 
 ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-item::before {
-  content: "\25CF"; 
-  color: rgb(107, 114, 128);
+  content: "\00BB"; 
+  color: rgb(52, 211, 153);
   font-weight: bold;
   font-size: 1em;
   display: inline-block;
   width: 1.15em;
   margin-top: 0.5em;
+}
+
+.vertical-timeline-element-list-item.vertical-timeline-element-clickable-list-item {
+  cursor: pointer;
+}
+
+.vertical-timeline-element-list-item.vertical-timeline-element-clickable-list-item:hover {
+  color: rgb(52, 211, 153);
 }
