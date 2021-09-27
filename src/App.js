@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import classNames from "classnames";
 import About from "./components/About";
-import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
@@ -13,15 +12,15 @@ export default function App() {
   const [project, setProject] = useState(null);
   const [showModal, setShowModal] = React.useState(false);
 
-  useEffect(() => {
-    if (showModal) {
-      document.body.style.overflow = "hidden";
-      document.body.scroll = "no";
-    } else {
-      document.documentElement.style.overflow = 'scroll';
-      document.body.scroll = "yes";
-    }
-  }, [showModal]);
+  // useEffect(() => {
+  //   if (showModal) {
+  //     document.body.style.overflow = "hidden";
+  //     document.body.scroll = "no";
+  //   } else {
+  //     document.documentElement.style.overflow = 'scroll';
+  //     document.body.scroll = "yes";
+  //   }
+  // }, [showModal]);
 
   return (
     <main
@@ -40,7 +39,6 @@ export default function App() {
       <Projects setProject={setProject} setShowModal={setShowModal} />
       <Skills />
       <Testimonials />
-      <Contact />
     </main>
   );
 }
