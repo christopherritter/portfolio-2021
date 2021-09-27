@@ -3,11 +3,11 @@ import React from "react";
 import { projects } from "../data";
 
 export default function Projects(props) {
-  const { setProject, setShowModal } = props;
+  const { setProject, openModal } = props;
 
   function selectProject(project) {
     setProject(project);
-    setShowModal(true);
+    openModal();
   }
 
   return (
