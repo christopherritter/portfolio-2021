@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
 
@@ -7,6 +7,14 @@ Modal.setAppElement("#modal");
 
 export default function ProjectModal(props) {
   const { project, modalIsOpen, closeModal } = props;
+
+  useEffect(() => {
+    if (modalIsOpen) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "auto";
+    }
+  }, [modalIsOpen]);
 
   if (!project) {
     return null;

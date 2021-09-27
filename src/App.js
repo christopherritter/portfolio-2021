@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState } from "react";
 import classNames from "classnames";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
@@ -21,14 +20,6 @@ export default function App() {
     setIsOpen(false);
     setProject(null);
   }
-
-  useEffect(() => {
-    if (modalIsOpen) {
-      document.documentElement.style.overflow = "hidden";
-    } else {
-      document.documentElement.style.overflow = "auto";
-    }
-  }, [modalIsOpen]);
 
   return (
     <main
