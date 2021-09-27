@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       padding: ['hover'],
+      backgroundColor: ['active'],
     }
   },
   variants: {

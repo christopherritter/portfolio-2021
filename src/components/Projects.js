@@ -28,7 +28,7 @@ export default function Projects(props) {
             <div
               key={index}
               className="project-card rounded bg-gray-800 hover:bg-gray-700"
-              onClick={(project) => selectProject(project)}
+              onClick={() => selectProject(project)}
             >
               <img
                 alt="gallery"

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import Modal from "react-modal";
+import React, { useState, useEffect } from "react";
+
 import classNames from "classnames";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
@@ -8,38 +7,28 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import Timeline from "./components/Timeline";
-
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-  },
-};
-
-// Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
-Modal.setAppElement("#root");
+import ProjectModal from "./components/ProjectModal";
 
 export default function App() {
   const [project, setProject] = useState(null);
   const [modalIsOpen, setIsOpen] = React.useState(false);
-  let subtitle;
 
   function openModal() {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = "#f00";
-  }
-
   function closeModal() {
     setIsOpen(false);
+    setProject(null);
   }
+
+  useEffect(() => {
+    if (modalIsOpen) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "auto";
+    }
+  }, [modalIsOpen]);
 
   return (
     <main
@@ -50,24 +39,11 @@ export default function App() {
       })}
     >
       <Navbar />
-      <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
-      </Modal>
+      <ProjectModal
+        project={project}
+        modalIsOpen={modalIsOpen}
+        closeModal={closeModal}
+      />
       <About />
       <Timeline />
       <Projects
@@ -80,7 +56,3 @@ export default function App() {
     </main>
   );
 }
-
-const props = {};
-
-ReactDOM.render(<App {...props} />, document.getElementById('root'))
