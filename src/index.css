@@ -52,13 +52,18 @@ ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-it
   color: rgb(52, 211, 153);
 }
 
-.project-cards {
+.project-card {
   margin: 0.5rem 0;
   width: 100%;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  background-color: inherit;
 }
 
 @media only screen and (min-width: 1280px) {
-  .project-cards {
+  .project-card {
     margin: 0.5rem;
     width: calc(50% - 1rem);
   }

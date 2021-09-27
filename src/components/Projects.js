@@ -2,7 +2,14 @@ import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
 
-export default function Projects() {
+export default function Projects(props) {
+  const { setProject, setShowModal } = props;
+
+  function selectProject(project) {
+    setProject(project);
+    setShowModal(true);
+  }
+
   return (
     <section id="projects" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -12,14 +19,16 @@ export default function Projects() {
             Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Things that I've built professionally or in my free time to keep up
+            Things that I've built on the job or in my free time to keep up
             with the latest technologies.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
-              className="project-cards rounded bg-gray-800 hover:bg-green-50"
+              key={index}
+              className="project-card rounded bg-gray-800 hover:bg-gray-700"
+              onClick={(project) => selectProject(project)}
             >
               <img
                 alt="gallery"

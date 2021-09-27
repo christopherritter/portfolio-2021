@@ -13,7 +13,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { employers } from "../data";
 
 export default function Timeline(props) {
-  const { setShowModal } = props;
+  // const { setShowModal } = props;
 
   return (
     <section id="experience">

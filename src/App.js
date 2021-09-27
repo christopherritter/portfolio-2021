@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import classNames from "classnames";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -9,15 +10,34 @@ import Timeline from "./components/Timeline";
 import ProjectModal from "./components/ProjectModal";
 
 export default function App() {
+  const [project, setProject] = useState(null);
   const [showModal, setShowModal] = React.useState(false);
 
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+      document.body.scroll = "no";
+    } else {
+      document.documentElement.style.overflow = 'scroll';
+      document.body.scroll = "yes";
+    }
+  }, [showModal]);
+
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main
+      className={classNames({
+        "text-gray-400": true,
+        "bg-gray-900": true,
+        "body-font": true,
+      })}
+    >
       <Navbar />
-      { showModal && <ProjectModal setShowModal={setShowModal} /> }
+      {showModal && (
+        <ProjectModal project={project} setShowModal={setShowModal} />
+      )}
       <About />
-      <Timeline setShowModal={setShowModal} />
-      <Projects setShowModal={setShowModal} />
+      <Timeline />
+      <Projects setProject={setProject} setShowModal={setShowModal} />
       <Skills />
       <Testimonials />
       <Contact />
