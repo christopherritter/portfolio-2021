@@ -24,12 +24,12 @@ export default function ProjectModal(props) {
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
-      className="container mx-auto bg-white rounded"
-      overlayClassName="fixed flex flex-col justify-center inset-0 z-50 bg-black bg-opacity-60 "
-      contentLabel={project.title}
+      className="container mx-auto bg-white rounded my-4"
+      overlayClassName="fixed flex flex-col inset-0 z-50 bg-black bg-opacity-60 overflow-y-auto"
+      contentLabel={project.name}
     >
       <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-        <h3 className="text-3xl font-semibold">{project.title}</h3>
+        <h3 className="text-3xl font-semibold">{project.name}</h3>
         <button
           className="p-1 ml-auto bg-transparent border-0 text-black opacity-50 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
           onClick={closeModal}
@@ -40,6 +40,10 @@ export default function ProjectModal(props) {
         </button>
       </div>
       <div className="relative p-6 flex-auto">
+        <img
+          alt={project.name}
+          src={project.image}
+        />
         <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
           {project.description}
         </p>

@@ -7,7 +7,7 @@ export const employers = [
     location: "Blue Ash, Ohio",
     projects: [{
         name: "Find Your Calling",
-        img: "/img/FYC.png",
+        image: "./img/FYC.png",
         description: "Find Your Calling helps prospective students identify career paths that match their personal interests. The website provides detailed information about employment opportunities in each state, plus the ability to connect with local colleges and universities that offer relevant courses.",
         tasks: [{
             description: "Redesigned elements of Find Your Calling to focus on educational institutions.",
@@ -16,22 +16,22 @@ export const employers = [
             tech: ["Bootstrap", "Sass", "Handlebars"],
             deliverables: [{
                 title: "The All-New Career Explorer",
-                img: "/img/FYC_Career-Explorer.png",
+                image: "./img/FYC_Career-Explorer.png",
                 description: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
               },
               {
                 title: "The Improved Private Profile",
-                img: "/img/FYC_Private-Profile.png",
+                image: "./img/FYC_Private-Profile.png",
                 description: "The private profile was redesigned to focus on the educational choices for each of the career paths. This was part of a larger effort to connect prospective students to eductional institutions."
               },
               {
                 title: "Additional School Filters",
-                img: "/img/FYC_Schools-Filter.png",
+                image: "./img/FYC_Schools-Filter.png",
                 description: "Additional filters were added to the school listing for each of the career paths. These were designed for both desktop and mobile devices to align with the eductional instutitions below the filters."
               },
               {
                 title: "Big Data School Headers",
-                img: "/img/FYC_School-Header.png",
+                image: "./img/FYC_School-Header.png",
                 description: "Visualized data for the schools was moved from the body of the original page into an interactive header. The header was designed to be used on both desktop and mobile devices."
               }
             ]
@@ -43,7 +43,7 @@ export const employers = [
             tech: ["NodeJS", "Bootstrap", "Sass", "Handlebars"],
             deliverables: [{
               title: "FYC Design System",
-              img: "/img/FYC_Pattern-Lab.png",
+              image: "./img/FYC_Pattern-Lab.png",
               description: "Pattern Lab was used to create a new design system for Find Your Calling which leveraged existing style sheets and templates. This enabled the design system to integrate seamlessly with the pre-existing technology stack."
             }]
           },
@@ -53,7 +53,7 @@ export const employers = [
             tools: ["Google Analytics"],
             deliverables: [{
               title: "Google Analytics Reporting",
-              img: "/img/FYC_Google-Reports.png",
+              image: "./img/FYC_Google-Reports.png",
               description: "The inclusion of Google Analytics allowed for the creation of detailed reports which showed the conversion rates for our project targets. These reports helped rate the efficacy of the designs and guide future enhancements."
             }]
           }
@@ -62,7 +62,7 @@ export const employers = [
       },
       {
         name: "Jenzabar ICS 9",
-        img: "/img/JICS9.png",
+        image: "./img/JICS9.png",
         description: "The latest release of the Jenzabar Internet Campus Solution features a suite of online portlets which have been redesigned for use on mobile and deskotop browsers, plus an all-new theme to align with the company's new branding guidelines.",
         tasks: [{
             description: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
@@ -71,22 +71,22 @@ export const employers = [
             tech: ["ASCX", "Bootstrap", "Sass", "jQuery", "FooTable"],
             deliverables: [{
                 title: "CRM Student Portlets",
-                img: "/img/JICS9_CRM-Student.png",
+                image: "./img/JICS9_CRM-Student.png",
                 description: "Implemented responsive layouts for CRM Student portlets which provide online access to student information. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
               },
               {
                 title: "CRM Candidate Portlets",
-                img: "/img/JICS9_CRM-Candidate.png",
+                image: "./img/JICS9_CRM-Candidate.png",
                 description: "Implemented responsive layouts for CRM Candidate portlets which provide online access to information about potential candidates. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
               },
               {
                 title: "CRM Staff Portlets",
-                img: "/img/JICS9_CRM-Staff.png",
+                image: "./img/JICS9_CRM-Staff.png",
                 description: "Implemented responsive layouts for CRM Staff portlets which provide online access to employment information. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
               },
               {
                 title: "CRM Faculty Portlets",
-                img: "/img/JICS9_CRM-Faculty.png",
+                image: "./img/JICS9_CRM-Faculty.png",
                 description: "Implemented responsive layouts for CRM Faculty portlets which provide online access to school resources for educators. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
               }
             ]
@@ -104,7 +104,7 @@ export const employers = [
             tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
             deliverables: [{
               title: "Jenzabar ICS Design System",
-              img: "/img/JICS9_CX-Mobile-Theme.png",
+              image: "./img/JICS9_CX-Mobile-Theme.png",
               description: "Created a new base theme for JICS9 which incorporated the new branding guidlines for Jenzabar products. Special attention was given to the Sass variables so as to make customization easier for the end user."
             }]
           },
@@ -121,7 +121,7 @@ export const employers = [
             tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
             deliverables: [{
               title: "Jenzabar ICS Design System",
-              img: "/img/JICS9_Design-System.png",
+              image: "./img/JICS9_Design-System.png",
               description: "A new design system was created for JICS9 to display the components in use by the CX portlets. The system leveraged the existing product to ensure the proper display of style sheets, templates, and other aspects of the design."
             }]
           }
@@ -130,7 +130,7 @@ export const employers = [
       },
       {
         name: "Jenzabar CX 10",
-        img: "/img/CX10.png",
+        image: "./img/CX10.png",
         description: "Jenzabar CX 10 is a completely redesigned version of the classic Jenzbar CX client that transforms the old interface from an 80-character black-and-green terminal screen to a modern, desktop experience for both PCs and Macs.",
         tasks: [{
           description: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
@@ -147,22 +147,22 @@ export const employers = [
           tech: ["QT", "QSS"],
           deliverables: [{
               title: "CX 10 Home Screen",
-              img: "/img/CX10_Home.png",
+              image: "./img/CX10_Home.png",
               description: "The home screen for CX 10 provides users with a searchable directory of their available applications. When the user launches an application it appears on a recently viewed list next to the directory."
             },
             {
               title: "Login and Release Selection",
-              img: "/img/CX10_Installer.png",
+              image: "./img/CX10_Installer.png",
               description: "The desktop version of CX10 provided customers with secure access to their institutional data. After signing in, users have the option to select from multiple instances of their data (known as releases)."
             },
             {
               title: "Personalized Fonts and Colors",
-              img: "/img/CX10_User-Settings.png",
+              image: "./img/CX10_User-Settings.png",
               description: "The settings screen enabled users to customize the font sizes and colors of their local client. Theme settings can be saved and loaded from a separate file to help enforce consistency at customer sites."
             },
             {
               title: "Interactive Prototypes",
-              img: "/img/CX10_Prototypes.png",
+              image: "./img/CX10_Prototypes.png",
               description: "Interactive prototypes were created in Adobe XD to visualize the user interactions with the client. Feedback was gathered internally and from clients to help determine the look and feel of the application."
             }
           ]
@@ -171,7 +171,7 @@ export const employers = [
       },
       {
         name: "Jenzabar JX",
-        img: "/img/JX.png",
+        image: "./img/JX.png",
         description: "Jenzabar JX provides online browser access to the classic Jenzabar CX suite of tools for colleges and universities. The new platform was built in Java and uses Smart GWT components to display the user interface.",
         tasks: [{
             description: "Provided design assistance to local, remote, and offshore development teams.",
@@ -209,7 +209,7 @@ export const employers = [
         tech: ["Bootstrap", "Sass", "Grunt"],
         deliverables: [{
           title: "Crown Industries Rebranding",
-          img: "/img/Crown-Website.png",
+          image: "./img/Crown-Website.png",
           description: "Adobe Experience Manager was used to rollout the new brand for Crown Industries. Bootstrap was used to display numerous components in a responsive layout, along with Sass to manage the CSS, which was compiled as part of the build process using Grunt."
         }]
       }],

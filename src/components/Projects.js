@@ -1,6 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
+import { employers, projects } from "../data";
 
 export default function Projects(props) {
   const { setProject, openModal } = props;
@@ -24,14 +24,14 @@ export default function Projects(props) {
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          {projects.map((project, index) => (
+          {employers[0].projects.map((project, index) => (
             <div
               key={index}
               className="project-card rounded bg-gray-800 hover:bg-gray-700"
               onClick={() => selectProject(project)}
             >
               <img
-                alt="gallery"
+                alt={project.name}
                 className="object-contain rounded"
                 src={project.image}
               />
