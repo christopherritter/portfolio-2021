@@ -24,14 +24,16 @@ export default function ProjectModal(props) {
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
-      className="container mx-auto bg-white rounded my-4"
-      overlayClassName="fixed flex flex-col inset-0 z-50 bg-black bg-opacity-60 overflow-y-auto"
+      className="container mx-auto bg-gray-800 text-white rounded-lg outline-none"
+      overlayClassName="fixed flex flex-col inset-0 z-50 bg-black bg-opacity-60 overflow-y-auto py-10"
       contentLabel={project.name}
     >
-      <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-        <h3 className="text-3xl font-semibold">{project.name}</h3>
+      <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
+        <h3 className="text-3xl text-blueGray-200 font-semibold">
+          {project.name}
+        </h3>
         <button
-          className="p-1 ml-auto bg-transparent border-0 text-black opacity-50 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+          className="p-1 ml-auto bg-transparent border-0 text-gray-900 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
           onClick={closeModal}
         >
           <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
@@ -40,13 +42,37 @@ export default function ProjectModal(props) {
         </button>
       </div>
       <div className="relative p-6 flex-auto">
-        <img
-          alt={project.name}
-          src={project.image}
-        />
-        <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
+        <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+          Project
+        </h6>
+        <p className="mb-8 text-blueGray-300 text-lg leading-relaxed">
           {project.description}
         </p>
+        <div className="rounded bg-gray-900 mb-8">
+          <img className="rounded" alt={project.name} src={project.image} />
+        </div>
+        {project.tasks &&
+          project.tasks.map((task, tIndex) => (
+            <div key={tIndex}>
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+                Task
+              </h6>
+              <p className="mb-4 text-blueGray-300 text-lg leading-relaxed">
+                {task.description}
+              </p>
+              {task.deliverables &&
+                task.deliverables.map((deliverable, dIndex) => (
+                  <div key={dIndex}>
+                    <p className="mb-4 text-blueGray-400 leading-relaxed">
+                      {deliverable.title}
+                    </p>
+                    <div className="rounded bg-gray-900 text-lg mb-6">
+                      <img className="rounded" alt={project.name} src={deliverable.image} />
+                    </div>
+                  </div>
+                ))}
+            </div>
+          ))}
       </div>
     </Modal>
   );
