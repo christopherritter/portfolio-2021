@@ -29,7 +29,7 @@ export default function ProjectModal(props) {
       contentLabel={project.name}
     >
       <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
-        <h3 className="text-3xl text-blueGray-200 font-semibold">
+        <h3 className="text-3xl text-blueGray-100 font-semibold">
           {project.name}
         </h3>
         <button
@@ -45,7 +45,7 @@ export default function ProjectModal(props) {
         <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
           Project
         </h6>
-        <p className="mb-8 text-blueGray-300 text-lg leading-relaxed">
+        <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
           {project.description}
         </p>
         <div className="rounded bg-gray-900 mb-8">
@@ -57,17 +57,53 @@ export default function ProjectModal(props) {
               <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
                 Task
               </h6>
-              <p className="mb-4 text-blueGray-300 text-lg leading-relaxed">
+              <p className="mb-4 text-blueGray-200 text-lg leading-relaxed">
                 {task.description}
               </p>
+              <div className="mb-6">
+                {task.skills &&
+                  task.skills.map((skill, sIndex) => (
+                    <span
+                      key={sIndex}
+                      className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-800 bg-green-400 uppercase last:mr-0 mr-1 mb-1"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                {task.tools &&
+                  task.tools.map((tool, toIndex) => (
+                    <span
+                      key={toIndex}
+                      className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-800 bg-green-400 uppercase last:mr-0 mr-1"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                {task.tech &&
+                  task.tech.map((te, teIndex) => (
+                    <span
+                      key={teIndex}
+                      className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-800 bg-green-400 uppercase last:mr-0 mr-1"
+                    >
+                      {te}
+                    </span>
+                  ))}
+              </div>
               {task.deliverables &&
                 task.deliverables.map((deliverable, dIndex) => (
                   <div key={dIndex}>
-                    <p className="mb-4 text-blueGray-400 leading-relaxed">
+                    <p className="mb-2 text-blueGray-300 leading-relaxed">
                       {deliverable.title}
                     </p>
-                    <div className="rounded bg-gray-900 text-lg mb-6">
-                      <img className="rounded" alt={project.name} src={deliverable.image} />
+                    <p className="mb-4 text-blueGray-400 leading-relaxed">
+                      {deliverable.description}
+                    </p>
+                    <div className="rounded bg-gray-900 text-lg mb-8">
+                      <img
+                        className="rounded"
+                        alt={project.name}
+                        src={deliverable.image}
+                      />
                     </div>
                   </div>
                 ))}
