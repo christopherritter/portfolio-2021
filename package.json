@@ -6,9 +6,12 @@
     "@craco/craco": "^5.9.0",
     "@heroicons/react": "^1.0.1",
     "classnames": "^2.3.1",
+    "copy-webpack-plugin": "^9.0.1",
+    "pdfjs-dist": "^2.9.359",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-modal": "^3.14.3",
+    "react-pdf": "^5.4.0",
     "react-scripts": "^4.0.3",
     "react-vertical-timeline-component": "^3.3.3"
   },

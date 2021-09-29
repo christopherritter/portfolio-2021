@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
 import Timeline from "./components/Timeline";
+import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 import ProjectModal from "./components/ProjectModal";
 
 export default function App() {
@@ -44,6 +46,8 @@ export default function App() {
       />
       <Skills />
       <Testimonials />
+      <Resume />
+      <Footer />
     </main>
   );
 }

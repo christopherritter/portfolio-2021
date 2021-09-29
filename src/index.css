@@ -62,6 +62,10 @@ ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-it
   background-color: inherit;
 }
 
+.react-pdf__Page__textContent {
+  display: none;
+}
+
 @media only screen and (min-width: 1280px) {
   .project-card {
     margin: 0.5rem;
