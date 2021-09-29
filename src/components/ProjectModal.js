@@ -36,7 +36,7 @@ export default function ProjectModal(props) {
           className="p-1 ml-auto bg-transparent border-0 text-gray-900 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
           onClick={closeModal}
         >
-          <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">
+          <span className="bg-transparent text-blueGray-500 h-8 w-8 text-2xl block outline-none focus:outline-none">
             ×
           </span>
         </button>

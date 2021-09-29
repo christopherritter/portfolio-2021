@@ -22,8 +22,8 @@ export default function Footer() {
       className="relative w-full p-2 bg-gray-800 bg-opacity-40 border-t border-gray-700"
     >
       <div className="container mx-auto md:px-10 flex flex-wrap">
-        <div className="w-full md:w-1/2">© 2021 Christopher Ritter</div>
-        <div className="w-full md:w-1/2 text-right">
+        <div className="w-1/2">© 2021 Christopher Ritter</div>
+        <div className="w-1/2 text-right">
           <button
             className="h-5 w-5 ml-2 text-gray-400 hover:text-gray-200"
             type="button"

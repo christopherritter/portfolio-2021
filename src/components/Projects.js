@@ -1,6 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { employers, projects } from "../data";
+import { employers } from "../data";
 import "../index.css"
 
 export default function Projects(props) {
