@@ -16,7 +16,7 @@ export default function Timeline(props) {
   // const { setShowModal } = props;
 
   return (
-    <section id="experience">
+    <section id="experience" style={{ scrollMarginTop: "72px"}}>
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center">
           <CalendarIcon className="w-10 inline-block mb-4" />

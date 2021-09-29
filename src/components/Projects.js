@@ -11,7 +11,11 @@ export default function Projects(props) {
   }
 
   return (
-    <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+    <section
+      id="projects"
+      className="text-gray-400 bg-gray-900 body-font"
+      style={{ scrollMarginTop: "72px" }}
+    >
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
@@ -19,8 +23,8 @@ export default function Projects(props) {
             Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Things that I've built on the job or in my free time to keep up
-            with the latest technologies.
+            Things that I've built on the job or in my free time to keep up with
+            the latest technologies.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">

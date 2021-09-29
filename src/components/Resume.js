@@ -24,11 +24,12 @@ export default function Resume() {
 
   return (
     <section
-      id="contact"
+      id="resume"
       className="relative w-full bg-gray-800 bg-opacity-40 py-10"
+      style={{ scrollMarginTop: "72px"}}
     >
       <div className="container px-5 py-10 mx-auto text-center">
-        <h3 className="text-3xl text-blueGray-100 font-semibold">
+        <h3 className="text-3xl text-blueGray-100 font-semibold mb-3">
           Download a copy of my resume
         </h3>
         <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
@@ -44,7 +45,7 @@ export default function Resume() {
             Adobe PDF
           </button>
           <button
-            className="text-green-400 bg-transparent border border-solid border-green-400 hover:bg-green-400 hover:text-white active:bg-pink-600 font-bold uppercase px-8 py-3 rounded"
+            className="text-green-400 bg-transparent border border-solid border-green-400 hover:bg-green-400 hover:text-white active:bg-green-400 active:text-gray-800 font-bold uppercase px-8 py-3 rounded"
             type="button"
             onClick={downloadResumeDOC}
           >
