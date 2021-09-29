@@ -1,7 +1,7 @@
 import React from "react";
 // import { Document, Page, pdfjs } from "react-pdf";
 // import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
-// import "../index.css"
+import "../index.css"
 
 const resumePDF =
   process.env.PUBLIC_URL + "/files/Christoper-Ritter_Resume-09-17-2021.pdf";
@@ -25,8 +25,7 @@ export default function Resume() {
   return (
     <section
       id="resume"
-      className="relative w-full bg-gray-800 bg-opacity-40 py-10"
-      style={{ scrollMarginTop: "72px"}}
+      className="relative w-full bg-gray-800 bg-opacity-40 py-10 scroll-margin-top"
     >
       <div className="container px-5 py-10 mx-auto text-center">
         <h3 className="text-3xl text-blueGray-100 font-semibold mb-3">

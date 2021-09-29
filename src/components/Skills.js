@@ -1,10 +1,11 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
+import "../index.css";
 
 export default function Skills() {
   return (
-    <section id="skills" style={{ scrollMarginTop: "72px"}}>
+    <section id="skills" className="scroll-margin-top">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4" />

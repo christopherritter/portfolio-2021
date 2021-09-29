@@ -11,12 +11,13 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { employers } from "../data";
+import "../index.css"
 
 export default function Timeline(props) {
   // const { setShowModal } = props;
 
   return (
-    <section id="experience" style={{ scrollMarginTop: "72px" }}>
+    <section id="experience" className="scroll-margin-top">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center">
           <CalendarIcon className="w-10 inline-block mb-4" />

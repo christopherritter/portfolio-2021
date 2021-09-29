@@ -1,6 +1,7 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { employers, projects } from "../data";
+import "../index.css"
 
 export default function Projects(props) {
   const { setProject, openModal } = props;
@@ -13,8 +14,7 @@ export default function Projects(props) {
   return (
     <section
       id="projects"
-      className="text-gray-400 bg-gray-900 body-font"
-      style={{ scrollMarginTop: "72px" }}
+      className="text-gray-400 bg-gray-900 body-font scroll-margin-top"
     >
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">

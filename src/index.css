@@ -66,9 +66,16 @@ ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-it
   display: none;
 }
 
+.scroll-margin-top {
+  scroll-margin-top: 0px;
+}
+
 @media only screen and (min-width: 1280px) {
   .project-card {
     margin: 0.5rem;
     width: calc(50% - 1rem);
+  }
+  .scroll-margin-top {
+    scroll-margin-top: 72px;
   }
 }
