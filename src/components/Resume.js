@@ -37,14 +37,14 @@ export default function Resume() {
         </p>
         <div>
           <button
-            className="bg-green-400 text-gray-800 active:bg-green-300 font-bold uppercase text-base px-8 py-3 mr-4 rounded"
+            className="bg-green-400 mb-2 text-gray-800 active:bg-green-300 font-bold uppercase text-base px-8 py-3 mr-4 rounded w-full sm:w-auto"
             type="button"
             onClick={downloadResumePDF}
           >
             Adobe PDF
           </button>
           <button
-            className="text-green-400 bg-transparent border border-solid border-green-400 hover:bg-green-400 hover:text-white active:bg-green-400 active:text-gray-800 font-bold uppercase px-8 py-3 rounded"
+            className="text-green-400 mb-2 bg-transparent border border-solid border-green-400 hover:bg-green-400 hover:text-white active:bg-green-400 active:text-gray-800 font-bold uppercase px-8 py-3 rounded w-full sm:w-auto"
             type="button"
             onClick={downloadResumeDOC}
           >
