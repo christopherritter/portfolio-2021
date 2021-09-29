@@ -23,8 +23,7 @@ export default function Projects(props) {
             Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Things that I've built on the job or in my free time to keep up with
-            the latest technologies.
+            Here are some projects that I've worked on. Click on any project to see additional screenshots and the required skills.
           </p>
         </div>
         <div className="flex flex-wrap -m-4">

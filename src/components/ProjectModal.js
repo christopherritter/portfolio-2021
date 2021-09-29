@@ -24,7 +24,7 @@ export default function ProjectModal(props) {
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
-      className="container mx-auto bg-gray-800 text-white rounded-lg outline-none"
+      className="container sm mx-auto bg-gray-800 text-white rounded-lg outline-none"
       overlayClassName="fixed flex flex-col inset-0 z-50 bg-black bg-opacity-60 overflow-y-auto py-10"
       contentLabel={project.name}
     >

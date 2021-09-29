@@ -16,7 +16,7 @@ export default function Timeline(props) {
   // const { setShowModal } = props;
 
   return (
-    <section id="experience" style={{ scrollMarginTop: "72px"}}>
+    <section id="experience" style={{ scrollMarginTop: "72px" }}>
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center">
           <CalendarIcon className="w-10 inline-block mb-4" />
@@ -24,9 +24,7 @@ export default function Timeline(props) {
             Experience
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            This is a recent timeline of my professional experience. Each entry includes a task list which describes the tools and technology that I used to complete them.
           </p>
         </div>
         <div className="flex flex-wrap m-4">
