@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ReactGA from "react-ga";
 import classNames from "classnames";
 import About from "./components/About";
 import Navbar from "./components/Navbar";
@@ -9,6 +10,8 @@ import Timeline from "./components/Timeline";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 import ProjectModal from "./components/ProjectModal";
+
+ReactGA.initialize(process.env.REACT_APP_GA_TRACKING_ID);
 
 export default function App() {
   const [project, setProject] = useState(null);
@@ -22,6 +25,10 @@ export default function App() {
     setIsOpen(false);
     setProject(null);
   }
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  });
 
   return (
     <main
