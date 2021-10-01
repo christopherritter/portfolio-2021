@@ -14,7 +14,7 @@ export default function Projects(props) {
   return (
     <section
       id="projects"
-      className="text-gray-400 bg-gray-900 body-font scroll-margin-top"
+      className="flex flex-col w-11/12 sm:w-5/6 lg:w-1/2 max-w-2xl mx-auto text-gray-400 bg-gray-900 body-font scroll-margin-top"
     >
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
