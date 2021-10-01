@@ -70,7 +70,7 @@ export default function Timeline(props) {
                                   key={index}
                                   // onClick={() => { console.log("clicked"); setShowModal(true); }}
                                 >
-                                  {task.description}
+                                  {task.summary}
                                 </li>
                               );
                             })}

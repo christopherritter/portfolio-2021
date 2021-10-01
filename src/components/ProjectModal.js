@@ -46,7 +46,7 @@ export default function ProjectModal(props) {
           Project
         </h6>
         <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
-          {project.description}
+          {project.summary}
         </p>
         <div className="rounded bg-gray-900 mb-8">
           <img className="rounded" alt={project.name} src={project.image} />
@@ -58,7 +58,7 @@ export default function ProjectModal(props) {
                 Task
               </h6>
               <p className="mb-4 text-blueGray-200 text-lg leading-relaxed">
-                {task.description}
+                {task.summary}
               </p>
               <div className="mb-6">
                 {task.skills &&
