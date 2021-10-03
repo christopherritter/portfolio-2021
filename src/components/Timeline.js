@@ -11,7 +11,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { employers } from "../data";
-import "../index.css"
+import "../index.css";
 
 export default function Timeline(props) {
   // const { setShowModal } = props;
@@ -25,7 +25,9 @@ export default function Timeline(props) {
             Experience
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            This is a recent timeline of my professional experience. Each entry includes a task list which describes the tools and technology that I used to complete them.
+            This is a recent timeline of my professional experience. Each entry
+            includes a task list which describes the tools and technology that I
+            used to complete them.
           </p>
         </div>
         <div className="flex flex-wrap m-4">
@@ -55,37 +57,27 @@ export default function Timeline(props) {
                   <p className="text-base font-normal text-gray-100">
                     {employer.title}
                   </p>
-                  {employer.projects &&
-                    employer.projects.map((project, projectIndex) => {
-                      if (project.tasks) {
-                        return (
-                          <ul
-                            className="vertical-timeline-element-custom-content"
-                            key={projectIndex}
-                          >
-                            {project.tasks.map((task, index) => {
-                              return (
-                                <li
-                                  className="vertical-timeline-element-list-item text-gray-100"
-                                  key={index}
-                                  // onClick={() => { console.log("clicked"); setShowModal(true); }}
-                                >
-                                  {task.summary}
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        );
-                      } else {
-                        return (
-                          <ul className="vertical-timeline-element-custom-content">
-                            <li className="vertical-timeline-element-list-item">
+                  <ul className="vertical-timeline-element-custom-content">
+                    {employer.projects &&
+                      employer.projects.map((project, projectIndex) => {
+                        if (project.tasks) {
+                          return (
+                            <li
+                              className="vertical-timeline-element-list-item text-gray-100"
+                              key={projectIndex}
+                            >
+                              {project.summary}
+                            </li>
+                          );
+                        } else {
+                          return (
+                            <li className="vertical-timeline-element-list-item text-gray-100">
                               No projects found.
                             </li>
-                          </ul>
-                        );
-                      }
-                    })}
+                          );
+                        }
+                      })}
+                  </ul>
                 </VerticalTimelineElement>
               ))}
 

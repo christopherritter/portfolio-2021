@@ -24,7 +24,7 @@ export default function ProjectModal(props) {
     <Modal
       isOpen={modalIsOpen}
       onRequestClose={closeModal}
-      className="flex flex-col w-11/12 sm:w-5/6 md:10/12 mx-auto bg-gray-800 text-white rounded-lg outline-none"
+      className="flex flex-col w-11/12 sm:w-5/6 md:10/12 max-w-3xl mx-auto bg-gray-800 text-white rounded-lg outline-none"
       overlayClassName="fixed flex flex-col inset-0 h-screen z-50 bg-black bg-opacity-60 overflow-y-auto py-10"
       contentLabel={project.name}
     >
@@ -41,70 +41,91 @@ export default function ProjectModal(props) {
           </span>
         </button>
       </div>
+
       <div className="relative p-6 flex-auto">
-        <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
-          Project
-        </h6>
-        <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
-          {project.summary}
-        </p>
-        <div className="rounded bg-gray-900 mb-8">
-          <img className="rounded" alt={project.name} src={project.image} />
-        </div>
-        {project.tasks &&
-          project.tasks.map((task, tIndex) => (
-            <div key={tIndex}>
-              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
-                Task
+        <div className="flex flex-row">
+          {project.product && (
+            <div className="flex flex-col w-1/2 px-2">
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 w-1/2">
+                Product
               </h6>
-              <p className="mb-4 text-blueGray-200 text-lg leading-relaxed">
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed w-1/2">
+                {project.product}
+              </p>
+            </div>
+          )}
+          {project.date && (
+            <div className="flex flex-col w-1/2 px-2">
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+                Date
+              </h6>
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
+                {project.date}
+              </p>
+            </div>
+          )}
+        </div>
+
+        <div className="flex flex-row">
+          {project.problem && (
+            <div className="flex flex-col w-1/2 px-2">
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+                Problem
+              </h6>
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
+                {project.problem}
+              </p>
+            </div>
+          )}
+          {project.solution && (
+            <div className="flex flex-col w-1/2 px-2">
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+                Solution
+              </h6>
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
+                {project.solution}
+              </p>
+            </div>
+          )}
+        </div>
+
+        {project.process && project.process.length > 0 && (
+          <div className="px-2">
+            <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+              Process
+            </h6>
+            <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
+              {project.process.map((step, index) => {
+                if (index !== project.process.length - 1) {
+                  return <span key={index}>{step},&nbsp;</span>;
+                } else {
+                  return <span key={index}>{step}</span>;
+                }
+              })}
+            </p>
+          </div>
+        )}
+
+        <div className="rounded bg-gray-900 mb-8">
+          <img alt={project.name} src={project.image} />
+        </div>
+
+        {project.tasks &&
+          project.tasks.map((task, index) => (
+            <div className="px-2" key={index}>
+              <h2 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+                {task.type}
+              </h2>
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
                 {task.summary}
               </p>
-              <div className="mb-6">
-                {task.skills &&
-                  task.skills.map((skill, sIndex) => (
-                    <span
-                      key={sIndex}
-                      className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-800 bg-green-400 uppercase last:mr-0 mr-1 mb-1"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                {task.tools &&
-                  task.tools.map((tool, toIndex) => (
-                    <span
-                      key={toIndex}
-                      className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-800 bg-green-400 uppercase last:mr-0 mr-1"
-                    >
-                      {tool}
-                    </span>
-                  ))}
-                {task.tech &&
-                  task.tech.map((te, teIndex) => (
-                    <span
-                      key={teIndex}
-                      className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-green-800 bg-green-400 uppercase last:mr-0 mr-1"
-                    >
-                      {te}
-                    </span>
-                  ))}
-              </div>
               {task.deliverables &&
-                task.deliverables.map((deliverable, dIndex) => (
-                  <div key={dIndex}>
-                    <p className="mb-2 text-blueGray-300 leading-relaxed">
-                      {deliverable.title}
-                    </p>
-                    <p className="mb-4 text-blueGray-400 leading-relaxed">
-                      {deliverable.description}
-                    </p>
-                    <div className="rounded bg-gray-900 text-lg mb-8">
-                      <img
-                        className="rounded"
-                        alt={project.name}
-                        src={deliverable.image}
-                      />
-                    </div>
+                task.deliverables.map((deliverable, index) => (
+                  <div key={index} className="rounded bg-gray-900 mb-8">
+                    <img
+                      alt={deliverable.title}
+                      src={deliverable.image}
+                    />
                   </div>
                 ))}
             </div>

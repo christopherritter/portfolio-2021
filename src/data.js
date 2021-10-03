@@ -5,143 +5,270 @@ export const employers = [{
     endDate: "Now",
     location: "Blue Ash, Ohio",
     projects: [
+
+
+
       {
         name: "TOC Navigation",
+        product: "JICS Design System",
         date: "April 2021",
         image: "./img/JICS9.png",
         role: "UI Developer",
-        summary: "Table of content (TOC) navigation enables users to navigate between different sections of page content.",
-        challenge: "Updates to the Design System outgrew the current navigational structure and required additional navigation.",
+        summary: "Developed a standardized sidebar for the JICS Design System.",
+        problem: "Updates to the Design System outgrew the current navigational structure and required additional navigation.",
         solution: "Create a new sidebar component which enables the user to navigate the content of a single page.",
+        process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
         tasks: [{
-            summary: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
-            skills: ["UX", "UI", "Prototyping", "Front-End"],
-            tools: ["Adobe XD", "VS Code"],
-            tech: ["ASCX", "Bootstrap", "Sass", "jQuery", "FooTable"],
-            deliverables: [{
-                title: "CRM Student Portlets",
-                image: "./img/JICS9_CRM-Student.png",
-                summary: "Implemented responsive layouts for CRM Student portlets which provide online access to student information. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
-              },
-              {
-                title: "CRM Candidate Portlets",
-                image: "./img/JICS9_CRM-Candidate.png",
-                summary: "Implemented responsive layouts for CRM Candidate portlets which provide online access to information about potential candidates. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
-              },
-              {
-                title: "CRM Staff Portlets",
-                image: "./img/JICS9_CRM-Staff.png",
-                summary: "Implemented responsive layouts for CRM Staff portlets which provide online access to employment information. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
-              },
-              {
-                title: "CRM Faculty Portlets",
-                image: "./img/JICS9_CRM-Faculty.png",
-                summary: "Implemented responsive layouts for CRM Faculty portlets which provide online access to school resources for educators. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
-              }
-            ]
+            type: "Technology Assessment",
+            summary: "Deep dive into the current technology stack being used to build the frontend for Jenzabar ICS 9.",
           },
           {
-            summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
-            skills: [
-              "UX",
-              "UI",
-              "Prototyping",
-              "Front-End",
-              "Visual Design"
-            ],
-            tools: ["Adobe XD", "VS Code"],
-            tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
-            deliverables: [{
-              title: "Jenzabar ICS Design System",
-              image: "./img/JICS9_CX-Mobile-Theme.png",
-              summary: "Created a new base theme for JICS9 which incorporated the new branding guidlines for Jenzabar products. Special attention was given to the Sass variables so as to make customization easier for the end user."
-            }]
+            type: "Competitive Audit",
+            summary: "Detailed analysis of the TOC navigation found on design systems similar to the JICS Design System.",
           },
           {
-            summary: "Created a design system for JICS9 portlets to standardize front-end components.",
-            skills: [
-              "UX",
-              "UI",
-              "Prototyping",
-              "Front-End",
-              "Design Systems"
-            ],
-            tools: ["Adobe XD", "VS Code"],
-            tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
-            deliverables: [{
-              title: "Jenzabar ICS Design System",
-              image: "./img/JICS9_Design-System.png",
-              summary: "A new design system was created for JICS9 to display the components in use by the CX portlets. The system leveraged the existing product to ensure the proper display of style sheets, templates, and other aspects of the design."
-            }]
-          }
+            type: "Functional Prototype",
+            summary: "Initial prototype of the TOC navigation containing the necessary features derrived from the competitive audit.",
+          },
+          {
+            type: "Internal Review",
+            summary: "Initial review of the prototype revealed the features complicated the experience and doubled the size of the template.",
+          },
+          {
+            type: "Frontend Development",
+            summary: "Updated the front-end template to ensure the TOC navigation worked on the standard themes that are available on JICS.",
+          },
         ],
-        path: "jics9"
+        skills: [
+          "UX",
+          "UI",
+          "Prototyping",
+          "Front-End",
+          "Design Systems"
+        ],
+        tools: ["Adobe XD", "VS Code"],
+        tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
+        results: {
+          finalResults: "",
+          keyLearnings: "",
+          nextSteps: ""
+        },
+        path: "jicsds"
       },
+
+
+
+
+
+
+
       {
-        name: "Find Your Calling",
-        date: "January 2019",
-        role: "",
-        image: "./img/FYC.png",
-        summary: "Find Your Calling helps prospective students identify career paths that match their personal interests. The website provides detailed information about employment opportunities in each state, plus the ability to connect with local colleges and universities that offer relevant courses.",
-        challenge: "",
-        solution: "",
+        name: "JICS Design System",
+        product: "JICS Design System",
+        image: "./img/JICS9_Design-System.png",
+        role: "Frontend Developer",
+        summary: "Created a design system for JICS9 portlets to standardize front-end components.",
+        process: [],
         tasks: [{
-            summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
-            skills: ["UX", "UI", "Visual Design", "Prototyping"],
-            tools: ["Adobe XD", "VS Code"],
-            tech: ["Bootstrap", "Sass", "Handlebars"],
-            deliverables: [{
-                title: "The All-New Career Explorer",
-                image: "./img/FYC_Career-Explorer.png",
-                summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
-              },
-              {
-                title: "The Improved Private Profile",
-                image: "./img/FYC_Private-Profile.png",
-                summary: "The private profile was redesigned to focus on the educational choices for each of the career paths. This was part of a larger effort to connect prospective students to eductional institutions."
-              },
-              {
-                title: "Additional School Filters",
-                image: "./img/FYC_Schools-Filter.png",
-                summary: "Additional filters were added to the school listing for each of the career paths. These were designed for both desktop and mobile devices to align with the eductional instutitions below the filters."
-              },
-              {
-                title: "Big Data School Headers",
-                image: "./img/FYC_School-Header.png",
-                summary: "Visualized data for the schools was moved from the body of the original page into an interactive header. The header was designed to be used on both desktop and mobile devices."
-              }
-            ]
-          },
-          {
-            summary: "Implemented Pattern Lab to deliver redesigned elements for Find Your Calling.",
-            skills: ["UI", "Front-End", "Design Systems"],
-            tools: ["Pattern Lab", "VS Code"],
-            tech: ["NodeJS", "Bootstrap", "Sass", "Handlebars"],
-            deliverables: [{
-              title: "FYC Design System",
-              image: "./img/FYC_Pattern-Lab.png",
-              summary: "Pattern Lab was used to create a new design system for Find Your Calling which leveraged existing style sheets and templates. This enabled the design system to integrate seamlessly with the pre-existing technology stack."
-            }]
-          },
-          {
-            summary: "Created Google Analytics reports to measure the effectiveness of redesigned elements.",
-            skills: ["UX", "Reporting", "Ideation"],
-            tools: ["Google Analytics"],
-            deliverables: [{
-              title: "Google Analytics Reporting",
-              image: "./img/FYC_Google-Reports.png",
-              summary: "The inclusion of Google Analytics allowed for the creation of detailed reports which showed the conversion rates for our project targets. These reports helped rate the efficacy of the designs and guide future enhancements."
-            }]
-          }
+          summary: "Created a design system for JICS9 portlets to standardize front-end components.",
+          type: "Frontend Development",
+          deliverables: [{
+            title: "Jenzabar ICS Design System",
+            image: "./img/JICS9_Design-System.png",
+            summary: "A new design system was created for JICS9 to display the components in use by the CX portlets. The system leveraged the existing product to ensure the proper display of style sheets, templates, and other aspects of the design."
+          }]
+        }],
+        skills: [
+          "UX",
+          "UI",
+          "Prototyping",
+          "Front-End",
+          "Design Systems"
         ],
+        tools: ["Adobe XD", "VS Code"],
+        tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
+        results: {
+          finalResults: "",
+          keyLearnings: "",
+          nextSteps: ""
+        },
+        path: "jicsds"
+      },
+
+
+
+      {
+        name: "Career Explorer",
+        product: "Find Your Calling",
+        date: "January 2019",
+        image: "./img/FYC.png",
+        role: "UX Designer",
+        summary: "Designed a Career Explorer to help prospective students to view related career paths.",
+        problem: "Prospective students simply received list of careers after taking the quiz.",
+        solution: "Create a Career Explorer for prospective students to view related career paths.",
+        process: ["Competitive Audit", "Low Fidelity Wireframes", "XD Prototype", "Internal Review", "Visual Design", "UI Development"],
+        tasks: [{
+          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          deliverables: [{
+              title: "The All-New Career Explorer",
+              image: "./img/FYC_Career-Explorer.png",
+              summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+            },
+            {
+              title: "The Improved Private Profile",
+              image: "./img/FYC_Private-Profile.png",
+              summary: "The private profile was redesigned to focus on the educational choices for each of the career paths. This was part of a larger effort to connect prospective students to eductional institutions."
+            },
+            {
+              title: "Additional School Filters",
+              image: "./img/FYC_Schools-Filter.png",
+              summary: "Additional filters were added to the school listing for each of the career paths. These were designed for both desktop and mobile devices to align with the eductional instutitions below the filters."
+            },
+            {
+              title: "Big Data School Headers",
+              image: "./img/FYC_School-Header.png",
+              summary: "Visualized data for the schools was moved from the body of the original page into an interactive header. The header was designed to be used on both desktop and mobile devices."
+            }
+          ]
+        }],
+        skills: ["UX", "UI", "Visual Design", "Prototyping"],
+        tools: ["Adobe XD", "VS Code"],
+        tech: ["Bootstrap", "Sass", "Handlebars"],
+        results: {
+          finalResults: "",
+          keyLearnings: "",
+          nextSteps: ""
+        },
         path: "fyc"
       },
+
+
+
+
+      {
+        name: "Pattern Lab",
+        product: "Find Your Calling",
+        image: "./img/FYC.png",
+        role: "Frontend Developer",
+        summary: "Implemented Pattern Lab to deliver redesigned elements for Find Your Calling.",
+        problem: "",
+        solution: "",
+        process: ["Competitive Audit", "Low Fidelity Wireframes", "XD Prototype", "Internal Review", "Visual Design", "UI Development"],
+        tasks: [{
+          summary: "",
+          deliverables: [{
+            title: "FYC Design System",
+            image: "./img/FYC_Pattern-Lab.png",
+            summary: "Pattern Lab was used to create a new design system for Find Your Calling which leveraged existing style sheets and templates. This enabled the design system to integrate seamlessly with the pre-existing technology stack."
+          }]
+        }],
+        skills: ["UI", "Front-End", "Design Systems"],
+        tools: ["Pattern Lab", "VS Code"],
+        tech: ["NodeJS", "Bootstrap", "Sass", "Handlebars"],
+        results: {
+          finalResults: "",
+          keyLearnings: "",
+          nextSteps: ""
+        },
+        path: "fyc"
+      },
+
+
+
+
+
+      {
+        name: "Responsive Layouts",
+        product: "Jenzabar ICS",
+        image: "./img/JICS9.png",
+        role: "UI Developer",
+        summary: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
+        problem: "",
+        solution: "",
+        process: [],
+        tasks: [{
+          summary: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
+          type: "Frontend Development",
+          deliverables: [{
+              title: "CRM Student Portlets",
+              image: "./img/JICS9_CRM-Student.png",
+              summary: "Implemented responsive layouts for CRM Student portlets which provide online access to student information. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
+            },
+            {
+              title: "CRM Candidate Portlets",
+              image: "./img/JICS9_CRM-Candidate.png",
+              summary: "Implemented responsive layouts for CRM Candidate portlets which provide online access to information about potential candidates. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
+            },
+            {
+              title: "CRM Staff Portlets",
+              image: "./img/JICS9_CRM-Staff.png",
+              summary: "Implemented responsive layouts for CRM Staff portlets which provide online access to employment information. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
+            },
+            {
+              title: "CRM Faculty Portlets",
+              image: "./img/JICS9_CRM-Faculty.png",
+              summary: "Implemented responsive layouts for CRM Faculty portlets which provide online access to school resources for educators. Used Bootstrap and various JavaScript libraries (e.g., jQuery and FooTable) to implement breakpoints within ASCX templates."
+            }
+          ]
+        }, ],
+        skills: ["UX", "UI", "Prototyping", "Front-End"],
+        tools: ["Adobe XD", "VS Code"],
+        tech: ["ASCX", "Bootstrap", "Sass", "jQuery", "FooTable"],
+        results: {
+          finalResults: "",
+          keyLearnings: "",
+          nextSteps: ""
+        },
+        path: "jics"
+      },
+
+
+
+      {
+        name: "CX Mobile Theme",
+        product: "Jenzabar ICS",
+        image: "./img/JICS9.png",
+        role: "UI Developer",
+        summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
+        problem: "",
+        solution: "",
+        process: [],
+        tasks: [{
+          summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
+          type: "UI Design",
+          deliverables: [{
+            title: "Jenzabar ICS Design System",
+            image: "./img/JICS9_CX-Mobile-Theme.png",
+            summary: "Created a new base theme for JICS9 which incorporated the new branding guidlines for Jenzabar products. Special attention was given to the Sass variables so as to make customization easier for the end user."
+          }]
+        }, ],
+        skills: [
+          "UX",
+          "UI",
+          "Prototyping",
+          "Front-End",
+          "Visual Design"
+        ],
+        tools: ["Adobe XD", "VS Code"],
+        tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
+        results: {
+          finalResults: "",
+          keyLearnings: "",
+          nextSteps: ""
+        },
+        path: "jics"
+      },
+
+
+
+
       {
         name: "Jenzabar CX 10",
+        product: "Jenzabar CX 10",
         image: "./img/CX10.png",
-        role: "",
-        summary: "Jenzabar CX 10 is a completely redesigned version of the classic Jenzbar CX client that transforms the old interface from an 80-character black-and-green terminal screen to a modern, desktop experience for both PCs and Macs.",
-        challenge: "",
+        role: "UI Designer",
+        summary: "Designed the next generation of Jenzabar CX for campus-wide administration on PC and Macintosh systems.",
+        problem: "",
         solution: "",
         tasks: [{
           summary: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
@@ -178,34 +305,37 @@ export const employers = [{
             }
           ]
         }],
-        path: "cx10"
+        path: "cx"
       },
+
+
+
       {
         name: "Jenzabar JX",
+        product: "Jenzabar JX",
         image: "./img/JX.png",
-        role: "",
-        summary: "Jenzabar JX provides online browser access to the classic Jenzabar CX suite of tools for colleges and universities. The new platform was built in Java and uses Smart GWT components to display the user interface.",
-        challenge: "",
+        role: "UX Designer",
+        summary: "Assisted local, remote, and offshort development teams with the design of Jenzbar JX.",
+        problem: "",
         solution: "",
-        tasks: [{
-            summary: "Provided design assistance to local, remote, and offshore development teams.",
-            skills: ["UX", "Visual Design"],
-            tools: [
-              "Adobe PhotoShop",
-              "Adobe Illustrator",
-              "Adobe InDesign"
-            ]
-          },
+        process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
+        tasks: [
           {
             summary: "Prototyped SmartGWT components to demonstrate user interactions and responsive layouts.",
-            skills: ["UI", "Prototyping", "Front-End"],
-            tools: ["Visual Studio"],
-            tech: ["SmartGWT"]
+            type: "Frontend Development"
           }
         ],
+        skills: ["UX", "Visual Design", "UI", "Prototyping", "Front-End"],
+        tools: [
+          "Adobe PhotoShop",
+          "Adobe Illustrator",
+          "Adobe InDesign",
+          "Visual Studio"
+        ],
+        tech: ["SmartGWT"],
         path: "jx"
       }
-    ]
+    ],
   },
   {
     title: "Interface Design Consultant",
@@ -214,22 +344,28 @@ export const employers = [{
     endDate: 2015,
     location: "New Bremen, Ohio",
     projects: [{
-      name: "Crown.com",
-      role: "UI Developer",
-      summary: "Primary website for Crown, Inc.",
-      challenge: "",
+      name: "Crown Industries Rebranding",
+      product: "Crown.com",
+      role: "Frontend Developer",
+      summary: "Contracted to provide front-end assistance for Crown Equipment to implement a responsive design for their corporate site managed by Adobe Experience Manager.",
+      problem: "Implement new branding guidelines on the main website.",
       solution: "",
       tasks: [{
-        summary: "Contracted to provide front-end assistance for Crown Equipment to implement a responsive design for their corporate site managed by Adobe Experience Manager.",
-        skills: ["UX", "UI"],
-        tools: ["Adobe Experience Manager"],
-        tech: ["Bootstrap", "Sass", "Grunt"],
+        summary: "",
         deliverables: [{
           title: "Crown Industries Rebranding",
           image: "./img/Crown-Website.png",
           summary: "Adobe Experience Manager was used to rollout the new brand for Crown Industries. Bootstrap was used to display numerous components in a responsive layout, along with Sass to manage the CSS, which was compiled as part of the build process using Grunt."
         }]
       }],
+      skills: ["UX", "UI"],
+      tools: ["Adobe Experience Manager"],
+      tech: ["Bootstrap", "Sass", "Grunt"],
+      results: {
+        finalResults: "",
+        keyLearnings: "",
+        nextSteps: ""
+      },
       path: "crown"
     }]
   },
@@ -240,14 +376,14 @@ export const employers = [{
     endDate: 2015,
     location: "Huber Heights, Ohio",
     projects: [{
-      name: "NextGen",
+      name: "Grade Control for Excavators",
+      product: "Trimble Earthworks",
       role: "UX Designer",
-      summary: "The next generation of machine control.",
-      challenge: "",
-      solution: "",
+      summary: "Designed the next generation of Grade Control for Trimble Earthworks on the Android platform.",
+      process: ["Field Research", "Ideation", "Validation", "Prototyping", "UI Design"],
       tasks: [{
           summary: "Brainstormed concepts with machine operators using Gamestorming techniques to generate new ideas.",
-          skills: ["UX", "Brainstorming"]
+          type: "Ideation"
         },
         {
           summary: "Developed HTML/Bootstrap prototypes for field testing with machine operators.",
@@ -275,8 +411,8 @@ export const employers = [{
           tech: ["Vuforia"]
         }
       ],
-      path: "nextgen"
-    }]
+      skills: ["UX", "Brainstorming"],
+    }],
   },
   {
     title: "Idea Designer",
@@ -287,43 +423,26 @@ export const employers = [{
     projects: [{
       name: "Lexis Advance",
       role: "UX Designer",
-      summary: "The next generation of legal documentation",
-      challenge: "",
+      summary: "Designed the next generation of case law research on Lexis Advance for the web, iOS, and Android platforms.",
+      problem: "",
       solution: "",
       tasks: [{
           summary: "Created annotated wireframes to support the development of Lexis Advance.",
-          skills: ["UX"]
         },
         {
           summary: "Conducted concept testing and usability research with legal professionals, and delivered top level reports of my discussions to primary stakeholders. ",
-          skills: ["UX", "Testing", "Research", "Reporting"]
         },
         {
           summary: "Lead brainstorming workshops with legal professionals using Gamestorming techniques to generate new ideas.",
-          skills: ["UX", "Brainstorming"]
         },
         {
           summary: "Founding member of the Customer Discovery & Innovation team which designed, prototyped, and tested the most popular concepts from our innovation pipeline.",
-          skills: [
-            "UX",
-            "Research",
-            "Analysis",
-            "Reporting",
-            "Prototyping"
-          ]
         },
         {
           summary: "Design Lead for several innovative products including Lexis Answers.",
-          skills: [
-            "UX",
-            "Research",
-            "Analysis",
-            "Brainstorming",
-            "Reporting",
-            "Prototyping"
-          ]
         }
       ],
+      skills: ["UX", "Brainstorming", "Testing", "Research", "Analysis", "Reporting", "Prototyping"],
       path: "lexisadvance"
     }]
   },
@@ -336,67 +455,33 @@ export const employers = [{
     projects: [{
       name: "Pearle Vision",
       role: "UX Designer",
-      summary: "Main website for Pearl Vision, inc.",
-      challenge: "",
+      summary: "Created a mobile try-on tool for Pearl Vision customers on the iOS and Android platforms.",
+      problem: "",
       solution: "",
       tasks: [{
           summary: "Planned the digital experience of social, mobile, and web applications for corporate clients that included P&G, Pearle Vision, and Red Bull.",
-          skills: ["UX", "Social Media"]
         },
         {
           summary: "Lead brainstorming sessions with creative, technical, and business leads to generate new ideas.",
-          skills: ["UX", "Brainstorming"]
         },
         {
           summary: "Illustrated user flows, site maps, and wireframes to assist the design and development teams.",
-          skills: ["UX"]
         },
         {
           summary: "Documented features and functionality for project management, and provided competitive analysis of similar products on the market.",
-          skills: ["UX"]
         },
         {
           summary: "Conducted usability testing with potential customers and reported insights back to the team.",
-          skills: ["UX", "Research", "Analysis", "Reporting"]
         },
         {
           summary: "Presented initial concepts, customer feedback, and other deliverables to the clients.",
-          skills: ["UX"]
         }
       ],
+      skills: ["UX", "Social Media", "Brainstorming", "Research", "Analysis", "Reporting"],
+      tools: ["Microsoft Visio"],
       path: "pearlevision"
     }]
   }
-];
-
-export const projects = [{
-    title: "Find Your Calling",
-    subtitle: "Adobe XD and Pattern Lab",
-    summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
-    image: "./img/FYC.png",
-    link: "https://findyourcalling.com/",
-  },
-  {
-    title: "Jenzabar ICS 9",
-    subtitle: "Bootstrap and jQuery",
-    summary: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
-    image: "./img/JICS9.png",
-    link: "https://jenzabar.com",
-  },
-  {
-    title: "Jenzabar CX 10",
-    subtitle: "QT Creator",
-    summary: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
-    image: "./img/CX10.png",
-    link: "https://jenzabar.com",
-  },
-  {
-    title: "Jenzabar JX",
-    subtitle: "SmartGWT",
-    summary: "Created prototype to demonstrate user interactions and responsive layouts.",
-    image: "./img/JX.png",
-    link: "https://jenzabar.com",
-  },
 ];
 
 export const testimonials = [{
