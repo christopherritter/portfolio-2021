@@ -6,12 +6,6 @@ import "../index.css";
 export default function Projects(props) {
   const { setProject, openModal } = props;
 
-  const handleImageLoad = (event) => {
-    // Do whatever you want here
-    const imageHeight = event.target.clientHeight;
-    console.log(imageHeight);
-  };
-
   function selectProject(project) {
     setProject(project);
     openModal();
@@ -57,7 +51,6 @@ export default function Projects(props) {
                 alt={project.name}
                 className="relative object-contain"
                 src={project.image}
-                onLoad={handleImageLoad}
               />
             </div>
           ))}

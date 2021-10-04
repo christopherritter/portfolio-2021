@@ -11,7 +11,7 @@ export const employers = [{
         name: "TOC Navigation",
         product: "Jenzabar ICS",
         date: "April 2021",
-        image: "./img/JICS9.png",
+        image: "./img/JICS9_TOC.png",
         role: "UI Developer",
         summary: "Developed a standardized sidebar for the JICS Design System.",
         problem: "Updates to the Jenzabar ICS Design System outgrew the current navigational structure and required additional navigation.",
@@ -45,7 +45,7 @@ export const employers = [{
           "Front-End",
           "Design Systems"
         ],
-        tools: ["Adobe XD", "VS Code"],
+        tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
         results: {
           finalResults: "",
@@ -79,7 +79,7 @@ export const employers = [{
           "Front-End",
           "Design Systems"
         ],
-        tools: ["Adobe XD", "VS Code"],
+        tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
         results: {
           finalResults: "",
@@ -125,7 +125,7 @@ export const employers = [{
           ]
         }],
         skills: ["UX", "UI", "Visual Design", "Prototyping"],
-        tools: ["Adobe XD", "VS Code"],
+        tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["Bootstrap", "Sass", "Handlebars"],
         results: {
           finalResults: "",
@@ -154,7 +154,7 @@ export const employers = [{
           }]
         }],
         skills: ["UI", "Front-End", "Design Systems"],
-        tools: ["Pattern Lab", "VS Code"],
+        tools: ["Pattern Lab", "VS Code", "Prepros"],
         tech: ["NodeJS", "Bootstrap", "Sass", "Handlebars"],
         results: {
           finalResults: "",
@@ -200,7 +200,7 @@ export const employers = [{
           ]
         }, ],
         skills: ["UX", "UI", "Prototyping", "Front-End"],
-        tools: ["Adobe XD", "VS Code"],
+        tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery", "FooTable"],
         results: {
           finalResults: "",
@@ -237,7 +237,7 @@ export const employers = [{
           "Front-End",
           "Visual Design"
         ],
-        tools: ["Adobe XD", "VS Code"],
+        tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
         results: {
           finalResults: "",

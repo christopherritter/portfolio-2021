@@ -145,7 +145,7 @@ export default function ProjectModal(props) {
               return <ProjectTask task={task} key={index} />;
             }
 
-            return <></>;
+            return <div key={index}></div>;
           })}
 
         {(project.process.includes("Functional Prototype") ||
@@ -164,7 +164,7 @@ export default function ProjectModal(props) {
               return <ProjectTask task={task} key={index} />;
             }
 
-            return <></>;
+            return <div key={index}></div>;
           })}
 
         {(project.process.includes("Frontend Development") ||
@@ -183,7 +183,7 @@ export default function ProjectModal(props) {
               return <ProjectTask task={task} key={index} />;
             }
 
-            return <></>;
+            return <div key={index}></div>;
           })}
       </div>
     </Modal>
