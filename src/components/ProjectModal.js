@@ -43,19 +43,19 @@ export default function ProjectModal(props) {
       </div>
 
       <div className="relative p-6 flex-auto">
-        <div className="flex flex-row">
+        <div className="flex flex-wrap">
           {project.product && (
-            <div className="flex flex-col w-1/2 px-2">
-              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 w-1/2">
+            <div className="flex flex-col w-full sm:w-1/2 px-2">
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
                 Product
               </h6>
-              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed w-1/2">
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
                 {project.product}
               </p>
             </div>
           )}
           {project.date && (
-            <div className="flex flex-col w-1/2 px-2">
+            <div className="flex flex-col w-full sm:w-1/2 px-2">
               <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
                 Date
               </h6>
@@ -66,9 +66,9 @@ export default function ProjectModal(props) {
           )}
         </div>
 
-        <div className="flex flex-row">
+        <div className="flex flex-wrap">
           {project.problem && (
-            <div className="flex flex-col w-1/2 px-2">
+            <div className="flex flex-col w-full lg:w-1/2 px-2">
               <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
                 Problem
               </h6>
@@ -78,7 +78,7 @@ export default function ProjectModal(props) {
             </div>
           )}
           {project.solution && (
-            <div className="flex flex-col w-1/2 px-2">
+            <div className="flex flex-col w-full lg:w-1/2 px-2">
               <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
                 Solution
               </h6>
@@ -97,7 +97,7 @@ export default function ProjectModal(props) {
             <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
               {project.process.map((step, index) => {
                 if (index !== project.process.length - 1) {
-                  return <span key={index}>{step},&nbsp;</span>;
+                  return <span key={index}>{step}&nbsp;&#8594;&nbsp;</span>;
                 } else {
                   return <span key={index}>{step}</span>;
                 }
