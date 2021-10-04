@@ -7,15 +7,14 @@ export const employers = [{
     projects: [
 
 
-
       {
         name: "TOC Navigation",
-        product: "JICS Design System",
+        product: "Jenzabar ICS",
         date: "April 2021",
         image: "./img/JICS9.png",
         role: "UI Developer",
         summary: "Developed a standardized sidebar for the JICS Design System.",
-        problem: "Updates to the Design System outgrew the current navigational structure and required additional navigation.",
+        problem: "Updates to the Jenzabar ICS Design System outgrew the current navigational structure and required additional navigation.",
         solution: "Create a new sidebar component which enables the user to navigate the content of a single page.",
         process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
         tasks: [{
@@ -57,14 +56,9 @@ export const employers = [{
       },
 
 
-
-
-
-
-
       {
         name: "JICS Design System",
-        product: "JICS Design System",
+        product: "Jenzabar ICS",
         image: "./img/JICS9_Design-System.png",
         role: "Frontend Developer",
         summary: "Created a design system for JICS9 portlets to standardize front-end components.",
@@ -94,7 +88,6 @@ export const employers = [{
         },
         path: "jicsds"
       },
-
 
 
       {
@@ -143,8 +136,6 @@ export const employers = [{
       },
 
 
-
-
       {
         name: "Pattern Lab",
         product: "Find Your Calling",
@@ -172,9 +163,6 @@ export const employers = [{
         },
         path: "fyc"
       },
-
-
-
 
 
       {

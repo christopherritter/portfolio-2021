@@ -20,6 +20,25 @@ export default function ProjectModal(props) {
     return null;
   }
 
+  const ProjectTask = ({ task }) => {
+    return (
+      <div className="px-2">
+        <h2 className="mb-1 text-white text-xl font-semi">
+          {task.type}
+        </h2>
+        <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
+          {task.summary}
+        </p>
+        {task.deliverables &&
+          task.deliverables.map((deliverable, index) => (
+            <div key={index} className="rounded bg-gray-900 mb-8">
+              <img alt={deliverable.title} src={deliverable.image} />
+            </div>
+          ))}
+      </div>
+    );
+  };
+
   return (
     <Modal
       isOpen={modalIsOpen}
@@ -110,26 +129,62 @@ export default function ProjectModal(props) {
           <img alt={project.name} src={project.image} />
         </div>
 
+        {(project.process.includes("Technology Assessment") ||
+          project.process.includes("Competitive Audit")) && (
+          <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 px-2">
+            Research
+          </h6>
+        )}
+
         {project.tasks &&
-          project.tasks.map((task, index) => (
-            <div className="px-2" key={index}>
-              <h2 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
-                {task.type}
-              </h2>
-              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
-                {task.summary}
-              </p>
-              {task.deliverables &&
-                task.deliverables.map((deliverable, index) => (
-                  <div key={index} className="rounded bg-gray-900 mb-8">
-                    <img
-                      alt={deliverable.title}
-                      src={deliverable.image}
-                    />
-                  </div>
-                ))}
-            </div>
-          ))}
+          project.tasks.map((task, index) => {
+            if (
+              task.type === "Technology Assessment" ||
+              task.type === "Competitive Audit"
+            ) {
+              return <ProjectTask task={task} key={index} />;
+            }
+
+            return <></>;
+          })}
+
+        {(project.process.includes("Functional Prototype") ||
+          project.process.includes("Internal Review")) && (
+          <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 px-2">
+            Validation
+          </h6>
+        )}
+
+        {project.tasks &&
+          project.tasks.map((task, index) => {
+            if (
+              task.type === "Functional Prototype" ||
+              task.type === "Internal Review"
+            ) {
+              return <ProjectTask task={task} key={index} />;
+            }
+
+            return <></>;
+          })}
+
+        {(project.process.includes("Frontend Development") ||
+          project.process.includes("Visual Design")) && (
+          <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 px-2">
+            Results
+          </h6>
+        )}
+
+        {project.tasks &&
+          project.tasks.map((task, index) => {
+            if (
+              task.type === "Frontend Development" ||
+              task.type === "Visual Design"
+            ) {
+              return <ProjectTask task={task} key={index} />;
+            }
+
+            return <></>;
+          })}
       </div>
     </Modal>
   );
