@@ -94,7 +94,7 @@ export const employers = [{
         name: "Career Explorer",
         product: "Find Your Calling",
         date: "January 2019",
-        image: "./img/FYC.png",
+        image: "./img/FYC_Career-Explorer.png",
         role: "UX Designer",
         summary: "Designed a Career Explorer to help prospective students to view related career paths.",
         problem: "Prospective students simply received list of careers after taking the quiz.",
@@ -139,7 +139,7 @@ export const employers = [{
       {
         name: "Pattern Lab",
         product: "Find Your Calling",
-        image: "./img/FYC.png",
+        image: "./img/FYC_Pattern-Lab.png",
         role: "Frontend Developer",
         summary: "Implemented Pattern Lab to deliver redesigned elements for Find Your Calling.",
         problem: "",
@@ -215,7 +215,7 @@ export const employers = [{
       {
         name: "CX Mobile Theme",
         product: "Jenzabar ICS",
-        image: "./img/JICS9.png",
+        image: "./img/JICS9_CX-Mobile-Theme.png",
         role: "UI Developer",
         summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
         problem: "",
