@@ -29,31 +29,38 @@ export default function Projects(props) {
         </div>
 
         <div className="flex flex-wrap -m-4">
-          {employers[0].projects.map((project, index) => (
-            <div
-              key={index}
-              className="flex relative project-card rounded bg-gray-800 hover:bg-gray-700 shadow-md"
-              onClick={() => selectProject(project)}
-            >
-              <div className="absolute flex flex-wrap content-center inset-0 z-10 text-center align-middle border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1 w-full px-4 md:px-8">
-                  {project.product}
-                </h2>
-                <h1 className="title-font text-lg font-medium text-white mb-3 w-full px-4 md:px-8">
-                  {project.name}
-                </h1>
-                <p className="leading-relaxed w-full px-4 md:px-8">
-                  {project.summary}
-                </p>
-              </div>
+          {employers[0].projects.map((project, index) => {
 
-              <img
-                alt={project.name}
-                className="relative object-contain"
-                src={project.image}
-              />
-            </div>
-          ))}
+            if (project.process && project.process.length > 0) {
+              return (
+                <div
+                  key={index}
+                  className="flex relative project-card rounded bg-gray-800 hover:bg-gray-700 shadow-md"
+                  onClick={() => selectProject(project)}
+                >
+                  <div className="absolute flex flex-wrap content-center inset-0 z-10 text-center align-middle border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                    <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1 w-full px-4 md:px-8">
+                      {project.product}
+                    </h2>
+                    <h1 className="title-font text-lg font-medium text-white mb-3 w-full px-4 md:px-8">
+                      {project.name}
+                    </h1>
+                    <p className="leading-relaxed w-full px-4 md:px-8">
+                      {project.summary}
+                    </p>
+                  </div>
+    
+                  <img
+                    alt={project.name}
+                    className="relative object-contain"
+                    src={project.image}
+                  />
+                </div>
+              ) } else {
+                return <div key={index} />
+              }
+
+          })}
         </div>
       </div>
     </section>
