@@ -20,22 +20,23 @@ export default function ProjectModal(props) {
     return null;
   }
 
-  const ProjectTask = ({ task }) => {
+  const ProjectTask = ({ task, number }) => {
     return (
-      <div className="px-2">
-        <h2 className="mb-1 text-white text-lg font-semi">
-          {task.type}
-        </h2>
-        <p className="mb-8 text-blueGray-200 text-base leading-relaxed">
+      <>
+        <h2 className="px-2 mb-1 text-white text-lg font-semi">{task.type}</h2>
+        <p className="px-2 mb-6 text-blueGray-200 text-base leading-relaxed">
           {task.summary}
         </p>
         {task.deliverables &&
           task.deliverables.map((deliverable, index) => (
-            <div key={index} className="rounded bg-gray-900 mb-8">
-              <img alt={deliverable.title} src={deliverable.image} />
+            <div key={index}>
+              <div className="rounded bg-gray-900 mb-4">
+                <img alt={deliverable.title} src={deliverable.image} />
+              </div>
+              <p className="px-2 mb-10 text-xs text-blueGray-400"><strong>Figure {number}.</strong> {deliverable.title}</p>
             </div>
           ))}
-      </div>
+      </>
     );
   };
 
@@ -116,7 +117,7 @@ export default function ProjectModal(props) {
             <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
               {project.process.map((step, index) => {
                 if (index !== project.process.length - 1) {
-                  return <span key={index}>{step}&nbsp;&#8594;&nbsp;</span>;
+                  return <span key={index}>{step},&nbsp;</span>;
                 } else {
                   return <span key={index}>{step}</span>;
                 }
@@ -125,66 +126,18 @@ export default function ProjectModal(props) {
           </div>
         )}
 
-        <div className="rounded bg-gray-900 mb-8">
+        <div className="rounded bg-gray-900 mb-4">
           <img alt={project.name} src={project.image} />
         </div>
 
-        {(project.process.includes("Technology Assessment") ||
-          project.process.includes("Competitive Audit")) && (
-          <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 px-2">
-            Research
-          </h6>
+        {project.imageDesc && (
+          <p className="px-2 mb-10 text-xs text-blueGray-400"><strong>Figure 1.</strong> {project.imageDesc}</p>
         )}
 
         {project.tasks &&
-          project.tasks.map((task, index) => {
-            if (
-              task.type === "Technology Assessment" ||
-              task.type === "Competitive Audit"
-            ) {
-              return <ProjectTask task={task} key={index} />;
-            }
-
-            return <div key={index}></div>;
-          })}
-
-        {(project.process.includes("Functional Prototype") ||
-          project.process.includes("Internal Review")) && (
-          <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 px-2">
-            Validation
-          </h6>
-        )}
-
-        {project.tasks &&
-          project.tasks.map((task, index) => {
-            if (
-              task.type === "Functional Prototype" ||
-              task.type === "Internal Review"
-            ) {
-              return <ProjectTask task={task} key={index} />;
-            }
-
-            return <div key={index}></div>;
-          })}
-
-        {(project.process.includes("Frontend Development") ||
-          project.process.includes("Visual Design")) && (
-          <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2 px-2">
-            Results
-          </h6>
-        )}
-
-        {project.tasks &&
-          project.tasks.map((task, index) => {
-            if (
-              task.type === "Frontend Development" ||
-              task.type === "Visual Design"
-            ) {
-              return <ProjectTask task={task} key={index} />;
-            }
-
-            return <div key={index}></div>;
-          })}
+          project.tasks.map((task, index) => (
+            <ProjectTask task={task} key={index} number={index + 2} />
+          ))}
       </div>
     </Modal>
   );
