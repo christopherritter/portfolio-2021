@@ -8,7 +8,7 @@ export const employers = [{
 
 
       {
-        name: "TOC Navigation",
+        name: "TOC Sidebar",
         product: "Jenzabar ICS",
         date: "April 2021",
         image: "./img/JICS9_TOC.png",
@@ -20,22 +20,43 @@ export const employers = [{
         tasks: [{
             type: "Technology Assessment",
             summary: "Deep dive into the current technology stack being used to build the frontend for Jenzabar ICS 9.",
+            deliverables: [{
+              title: "Jenzabar ICS Tech Stack",
+              image: "./img/JICS_TOC_Tech-Stack.png",
+            }]
           },
           {
             type: "Competitive Audit",
             summary: "Detailed analysis of the TOC navigation found on design systems similar to the JICS Design System.",
+            deliverables: [{
+              title: "Jenzabar ICS Competitive Analysis for TOC Sidebar",
+              image: "./img/JICS9_TOC_Comp-Analysis.png",
+            }],
           },
           {
             type: "Functional Prototype",
-            summary: "Initial prototype of the TOC navigation containing the necessary features derrived from the competitive audit.",
+            summary: "Initial prototype of the TOC Sidebar containing the necessary features derrived from the competitive audit.",
+            deliverables: [{
+              title: "Jenzabar ICS TOC Sidebar Functional Prototype",
+              image: "./img/JICS9_TOC_Prototype.png",
+            }],
           },
           {
             type: "Internal Review",
             summary: "Initial review of the prototype revealed the features complicated the experience and doubled the size of the template.",
+            deliverables: [{
+              title: "Jenzabar ICS TOC Sidebar Internal Review",
+              image: "./img/JICS9_TOC_Internal-Review.png",
+            }],
           },
           {
             type: "Frontend Development",
-            summary: "Updated the front-end template to ensure the TOC navigation worked on the standard themes that are available on JICS.",
+            summary: "Updated the front-end template to ensure the TOC Sidebar worked on the standard themes that are available on JICS.",
+            image: "./img/JICS9_TOC.png",
+            deliverables: [{
+              title: "Jenzabar ICS TOC Design System Update",
+              image: "./img/JICS9_TOC_Design-System.png",
+            }],
           },
         ],
         skills: [
