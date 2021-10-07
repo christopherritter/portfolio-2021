@@ -118,35 +118,52 @@ export const employers = [{
         product: "Find Your Calling",
         date: "January 2019",
         image: "./img/FYC_Career-Explorer.png",
-        imageDesc: "Career Explorer",
+        imageDesc: "Final release of the all-new Career Explorer for Find Your Calling on desktop and mobile devices.",
         role: "UX Designer",
         summary: "Designed a Career Explorer to help prospective students to view related career paths.",
         problem: "Prospective students simply received list of careers after taking the quiz.",
         solution: "Create a Career Explorer for prospective students to view related career paths.",
-        process: ["Competitive Audit", "Low Fidelity Wireframes", "XD Prototype", "Internal Review", "Visual Design", "UI Development"],
+        process: ["Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Internal Review", "Visual Design", "UI Development"],
         tasks: [{
+          type: "Competitive Audit",
+          summary: "Gathered a list of competitors and compared them across a variety of criteria.",
+          deliverables: [{
+            title: "Find Your Calling Career Explorer Competitive Audit",
+            image: "./img/FYC_Career-Exp_Comp-Audit.png",
+            summary: "Find Your Calling Career Explorer Competitive Audit"
+          }],
+        }, {
+          type: "Low Fidelity Wireframes",
           summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
           deliverables: [{
-              title: "The All-New Career Explorer",
-              image: "./img/FYC_Career-Explorer.png",
-              summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
-            },
-            {
-              title: "The Improved Private Profile",
-              image: "./img/FYC_Private-Profile.png",
-              summary: "The private profile was redesigned to focus on the educational choices for each of the career paths. This was part of a larger effort to connect prospective students to eductional institutions."
-            },
-            {
-              title: "Additional School Filters",
-              image: "./img/FYC_Schools-Filter.png",
-              summary: "Additional filters were added to the school listing for each of the career paths. These were designed for both desktop and mobile devices to align with the eductional instutitions below the filters."
-            },
-            {
-              title: "Big Data School Headers",
-              image: "./img/FYC_School-Header.png",
-              summary: "Visualized data for the schools was moved from the body of the original page into an interactive header. The header was designed to be used on both desktop and mobile devices."
-            }
-          ]
+            title: "The All-New Career Explorer",
+            image: "./img/FYC_Career-Exp_Wireframes.png",
+            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+          }],
+        }, {
+          type: "Interactive Prototype",
+          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          deliverables: [{
+            title: "The All-New Career Explorer",
+            image: "./img/FYC_Career-Exp_Prototype.png",
+            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+          }],
+        }, {
+          type: "Internal Review",
+          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          deliverables: [{
+            title: "The All-New Career Explorer",
+            image: "./img/FYC_Career-Exp_Review.png",
+            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+          }],
+        }, {
+          type: "Frontend Development",
+          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          deliverables: [{
+            title: "The All-New Career Explorer",
+            image: "./img/FYC_Career-Exp_Frontend-Dev.png",
+            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+          }],
         }],
         skills: ["UX", "UI", "Visual Design", "Prototyping"],
         tools: ["Adobe XD", "VS Code", "Prepros"],
@@ -336,12 +353,10 @@ export const employers = [{
         problem: "",
         solution: "",
         process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
-        tasks: [
-          {
-            summary: "Prototyped SmartGWT components to demonstrate user interactions and responsive layouts.",
-            type: "Frontend Development"
-          }
-        ],
+        tasks: [{
+          summary: "Prototyped SmartGWT components to demonstrate user interactions and responsive layouts.",
+          type: "Frontend Development"
+        }],
         skills: ["UX", "Visual Design", "UI", "Prototyping", "Front-End"],
         tools: [
           "Adobe PhotoShop",

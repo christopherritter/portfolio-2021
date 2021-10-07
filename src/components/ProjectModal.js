@@ -23,7 +23,7 @@ export default function ProjectModal(props) {
   const ProjectTask = ({ task, number }) => {
     return (
       <>
-        <h2 className="px-2 mb-1 text-white text-lg font-semi">{task.type}</h2>
+        <h2 className="px-2 mb-1 text-white text-xl font-semi">{task.type}</h2>
         <p className="px-2 mb-6 text-blueGray-200 text-base leading-relaxed">
           {task.summary}
         </p>
