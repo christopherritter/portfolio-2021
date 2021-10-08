@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
 
@@ -7,6 +7,7 @@ Modal.setAppElement("#modal");
 
 export default function ProjectModal(props) {
   const { project, modalIsOpen, closeModal } = props;
+  const [projectImages, setProjectImages] = useState([]);
 
   useEffect(() => {
     if (modalIsOpen) {
@@ -16,11 +17,31 @@ export default function ProjectModal(props) {
     }
   }, [modalIsOpen]);
 
+  useEffect(() => {
+    if (project) {
+      if (project.tasks) {
+        project.tasks.forEach((task) => {
+          if (task.deliverables) {
+            task.deliverables.forEach((deliverable) => {
+              console.log(deliverable);
+              if (
+                deliverable.image &&
+                !projectImages.includes(deliverable.image)
+              ) {
+                setProjectImages([deliverable.image, ...projectImages]);
+              }
+            });
+          }
+        });
+      }
+    }
+  }, [project, projectImages]);
+
   if (!project) {
     return null;
   }
 
-  const ProjectTask = ({ task, number }) => {
+  const ProjectTask = ({ task }) => {
     return (
       <>
         <h2 className="px-2 mb-1 text-white text-xl font-semi">{task.type}</h2>
@@ -28,14 +49,21 @@ export default function ProjectModal(props) {
           {task.summary}
         </p>
         {task.deliverables &&
-          task.deliverables.map((deliverable, index) => (
-            <div key={index}>
-              <div className="rounded bg-gray-900 mb-4">
-                <img alt={deliverable.title} src={deliverable.image} />
+          task.deliverables.map((deliverable, index) => {
+            return (
+              <div key={index}>
+                <div className="rounded bg-gray-900 mb-4">
+                  <img alt={deliverable.title} src={deliverable.image} />
+                </div>
+                <p className="px-2 mb-10 text-xs text-blueGray-400">
+                  <strong>
+                    Figure {projectImages.indexOf(deliverable.image) + 2}.
+                  </strong>{" "}
+                  {deliverable.title}
+                </p>
               </div>
-              <p className="px-2 mb-10 text-xs text-blueGray-400"><strong>Figure {number}.</strong> {deliverable.title}</p>
-            </div>
-          ))}
+            );
+          })}
       </>
     );
   };
@@ -131,12 +159,14 @@ export default function ProjectModal(props) {
         </div>
 
         {project.imageDesc && (
-          <p className="px-2 mb-10 text-xs text-blueGray-400"><strong>Figure 1.</strong> {project.imageDesc}</p>
+          <p className="px-2 mb-10 text-xs text-blueGray-400">
+            <strong>Figure 1.</strong> {project.imageDesc}
+          </p>
         )}
 
         {project.tasks &&
           project.tasks.map((task, index) => (
-            <ProjectTask task={task} key={index} number={index + 2} />
+            <ProjectTask task={task} key={index} />
           ))}
       </div>
     </Modal>

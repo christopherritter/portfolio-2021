@@ -85,7 +85,6 @@ export const employers = [{
         imageDesc: "JICS Design System",
         role: "Frontend Developer",
         summary: "Created a design system for JICS9 portlets to standardize front-end components.",
-        process: [],
         tasks: [{
           summary: "Created a design system for JICS9 portlets to standardize front-end components.",
           type: "Frontend Development",
@@ -186,7 +185,7 @@ export const employers = [{
         summary: "Implemented Pattern Lab to deliver redesigned elements for Find Your Calling.",
         problem: "",
         solution: "",
-        process: ["Competitive Audit", "Low Fidelity Wireframes", "XD Prototype", "Internal Review", "Visual Design", "UI Development"],
+        process: [],
         tasks: [{
           summary: "",
           deliverables: [{
@@ -262,9 +261,6 @@ export const employers = [{
         imageDesc: "CX Mobile Theme",
         role: "UI Developer",
         summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
-        problem: "",
-        solution: "",
-        process: [],
         tasks: [{
           summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
           type: "UI Design",
@@ -296,14 +292,16 @@ export const employers = [{
 
       {
         name: "Jenzabar CX 10",
-        product: "Jenzabar CX 10",
+        product: "Jenzabar CX",
         image: "./img/CX10.png",
         imageDesc: "Jenzabar CX 10",
         role: "UI Designer",
         summary: "Designed the next generation of Jenzabar CX for campus-wide administration on PC and Macintosh systems.",
         problem: "",
         solution: "",
+        process: ["Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Test", "Visual Design"],
         tasks: [{
+          type: "Visual Design",
           summary: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
           skills: [
             "UX",
