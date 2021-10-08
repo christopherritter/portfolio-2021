@@ -1,10 +1,9 @@
 import React from "react";
 import { CodeIcon } from "@heroicons/react/solid";
-import { employers } from "../data";
 import "../index.css";
 
 export default function Projects(props) {
-  const { setProject, openModal } = props;
+  const { projects, setProject, openModal } = props;
 
   function selectProject(project) {
     setProject(project);
@@ -12,10 +11,7 @@ export default function Projects(props) {
   }
 
   return (
-    <section
-      id="projects"
-      className="scroll-margin-top"
-    >
+    <section id="projects" className="scroll-margin-top">
       <div className="container px-5 py-10 w-10/12 sm:w-5/6 md:4/5 lg:3/5 mx-auto max-w-7xl">
         <div className="text-center mb-20">
           <CodeIcon className="w-10 inline-block mb-4" />
@@ -29,8 +25,7 @@ export default function Projects(props) {
         </div>
 
         <div className="flex flex-wrap -m-4">
-          {employers[0].projects.map((project, index) => {
-
+          {projects.map((project, index) => {
             if (project.process && project.process.length > 0) {
               return (
                 <div
@@ -49,17 +44,17 @@ export default function Projects(props) {
                       {project.summary}
                     </p>
                   </div>
-    
+
                   <img
                     alt={project.name}
                     className="relative object-contain"
                     src={project.image}
                   />
                 </div>
-              ) } else {
-                return <div key={index} />
-              }
-
+              );
+            } else {
+              return <div key={index} />;
+            }
           })}
         </div>
       </div>

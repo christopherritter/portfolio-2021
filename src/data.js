@@ -410,7 +410,7 @@ export const employers = [{
       product: "Trimble Earthworks",
       role: "UX Designer",
       summary: "Designed the next generation of Grade Control for Trimble Earthworks on the Android platform.",
-      process: ["Field Research", "Ideation", "Validation", "Prototyping", "UI Design"],
+      // process: ["Field Research", "Ideation", "Validation", "Prototyping", "UI Design"],
       tasks: [{
           summary: "Brainstormed concepts with machine operators using Gamestorming techniques to generate new ideas.",
           type: "Ideation"

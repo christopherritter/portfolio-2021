@@ -6,7 +6,7 @@ import Modal from "react-modal";
 Modal.setAppElement("#modal");
 
 export default function ProjectModal(props) {
-  const { project, modalIsOpen, closeModal } = props;
+  const { project, viewProject, modalIsOpen, closeModal } = props;
   const [projectImages, setProjectImages] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,6 @@ export default function ProjectModal(props) {
         project.tasks.forEach((task) => {
           if (task.deliverables) {
             task.deliverables.forEach((deliverable) => {
-              console.log(deliverable);
               if (
                 deliverable.image &&
                 !projectImages.includes(deliverable.image)
@@ -168,6 +167,31 @@ export default function ProjectModal(props) {
           project.tasks.map((task, index) => (
             <ProjectTask task={task} key={index} />
           ))}
+
+        {/*footer*/}
+        <div className="flex flex-wrap justify-end py-6">
+          <button
+            className="mr-auto text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+            type="button"
+            onClick={closeModal}
+          >
+            Close
+          </button>
+          <button
+            className="mr-4 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+            type="button"
+            onClick={() => {viewProject({ direction: 'previous', id: project.id })}}
+          >
+            Previous Project
+          </button>
+          <button
+            className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+            type="button"
+            onClick={() => {viewProject({ direction: 'next', id: project.id })}}
+          >
+            Next Project
+          </button>
+        </div>
       </div>
     </Modal>
   );
