@@ -76,7 +76,11 @@ export default function ProjectModal(props) {
       contentLabel={project.name}
     >
       <div className="flex items-start justify-between p-5 border-b border-solid border-gray-900 rounded-t">
-        <h3 className="text-3xl text-blueGray-100 font-semibold">
+        <h3
+          className="text-3xl text-blueGray-100 font-semibold"
+          id="projectTitle"
+          style={{ scrollMarginTop: "72px" }}
+        >
           {project.name}
         </h3>
         <button
@@ -180,14 +184,24 @@ export default function ProjectModal(props) {
           <button
             className="mr-4 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
             type="button"
-            onClick={() => {viewProject({ direction: 'previous', id: project.id })}}
+            onClick={() => {
+              viewProject({ direction: "previous", id: project.id });
+              document
+                .getElementById("projectTitle")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Previous Project
           </button>
           <button
             className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
             type="button"
-            onClick={() => {viewProject({ direction: 'next', id: project.id })}}
+            onClick={() => {
+              viewProject({ direction: "next", id: project.id });
+              document
+                .getElementById("projectTitle")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Next Project
           </button>
