@@ -25,7 +25,7 @@ export default function Resume() {
   return (
     <section
       id="resume"
-      className="relative w-full bg-gray-800 bg-opacity-40 py-10 scroll-margin-top"
+      className="relative w-full bg-gray-800 bg-opacity-40 py-10"
     >
       <div className="container px-5 py-10 mx-auto text-center">
         <h3 className="text-3xl text-blueGray-100 font-semibold mb-3">

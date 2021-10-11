@@ -66,9 +66,9 @@ ul.vertical-timeline-element-custom-content li.vertical-timeline-element-list-it
   display: none;
 }
 
-.scroll-margin-top {
+/* .scroll-margin-top {
   scroll-margin-top: 0px;
-}
+} */
 
 .scroll-margin-top {
   scroll-margin-top: 72px;
