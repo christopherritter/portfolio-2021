@@ -44,8 +44,8 @@ export default function ProjectModal(props) {
     return (
       <>
         <h2 className="px-2 mb-1 text-white text-xl font-semi">{task.type}</h2>
-        <p className="px-2 mb-6 text-blueGray-200 text-base leading-relaxed">
-          {task.summary}
+        <p className="px-2 mb-6 text-blueGray-200 text-base leading-relaxed whitespace-pre-line align-top">
+          {task.description}
         </p>
         {task.deliverables &&
           task.deliverables.map((deliverable, index) => {
@@ -140,22 +140,34 @@ export default function ProjectModal(props) {
           )}
         </div>
 
-        {project.process && project.process.length > 0 && (
-          <div className="px-2">
-            <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
-              Process
-            </h6>
-            <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
-              {project.process.map((step, index) => {
-                if (index !== project.process.length - 1) {
-                  return <span key={index}>{step},&nbsp;</span>;
-                } else {
-                  return <span key={index}>{step}</span>;
-                }
-              })}
-            </p>
-          </div>
-        )}
+        <div className="flex flex-wrap">
+          {project.role && (
+            <div className="flex flex-col w-full lg:w-1/2 px-2">
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+                Role
+              </h6>
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
+                {project.role}
+              </p>
+            </div>
+          )}
+          {project.process && project.process.length > 0 && (
+            <div className="flex flex-col w-full lg:w-1/2 px-2">
+              <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
+                Process
+              </h6>
+              <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
+                {project.process.map((step, index) => {
+                  if (index !== project.process.length - 1) {
+                    return <span key={index}>{step},&nbsp;</span>;
+                  } else {
+                    return <span key={index}>{step}</span>;
+                  }
+                })}
+              </p>
+            </div>
+          )}
+        </div>
 
         <div className="rounded bg-gray-900 mb-4">
           <img alt={project.name} src={project.image} />
@@ -172,6 +184,23 @@ export default function ProjectModal(props) {
             <ProjectTask task={task} key={index} />
           ))}
 
+        {project.results && (
+          <div className="px-2">
+            <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-4">
+              Results
+            </h6>
+            <p className="mb-6 text-blueGray-200 text-base leading-relaxed whitespace-pre-line align-top">
+              {project.results.finalResult}
+            </p>
+            <p className="mb-6 text-blueGray-200 text-base leading-relaxed whitespace-pre-line align-top">
+              {project.results.keyLearnings}
+            </p>
+            <p className="mb-6 text-blueGray-200 text-base leading-relaxed whitespace-pre-line align-top">
+              {project.results.nextSteps}
+            </p>
+          </div>
+        )}
+
         {/*footer*/}
         <div className="flex flex-wrap justify-end py-6">
           <button
@@ -182,7 +211,7 @@ export default function ProjectModal(props) {
             Close
           </button>
           <button
-            className="mr-4 text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+            className="mr-4 bg-transparent hover:text-gray-200 text-white py-2 px-6 border border-gray-400 hover:border-green-600 rounded text-lg"
             type="button"
             onClick={() => {
               viewProject({ direction: "previous", id: project.id });

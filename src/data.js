@@ -8,19 +8,19 @@ export const employers = [{
 
 
       {
-        name: "TOC Sidebar",
+        name: "Table of Contents Sidebar",
         product: "Jenzabar ICS",
         date: "April 2021",
         image: "./img/JICS9_TOC.png",
         imageDesc: "Mobile and desktop view of the TOC Sidebar on the JICS Design System.",
         role: "UI Developer",
-        summary: "Developed a standardized sidebar for the JICS Design System.",
-        problem: "Updates to the Jenzabar ICS Design System outgrew the current navigational structure and required additional navigation.",
-        solution: "Create a new sidebar component which enables the user to navigate the content of a single page.",
+        summary: "Developed a responsive sidebar for the JICS Design System.",
+        problem: "Updates to the Jenzabar ICS Design System outgrew the limitations of the secondary navbar and required additional navigation to help the user move through long pages of content.",
+        solution: "Create a responsive sidebar which resembles a Table of Contents and floats alongside the content as the user scrolls down the page with markers that identify their location.",
         process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
         tasks: [{
             type: "Technology Assessment",
-            summary: "Deep dive into the current technology stack being used to build the frontend for Jenzabar ICS 9.",
+            description: "The first step towards solving the limits of the secondary navigation was to better understand the current technology stack. This allowed for the creation of a solution that did not impact the development of JICS, but focused instead on the frontend frameworks that shipped with the product. I discovered a wide assortment of UI components and scripts that were available in the various frameworks. This provided me with a list a options to choose from when analyzing some of the Table of Content navigators found elsewhere on the Internet.",
             deliverables: [{
               title: "Jenzabar ICS Tech Stack",
               image: "./img/JICS_TOC_Tech-Stack.png",
@@ -28,7 +28,7 @@ export const employers = [{
           },
           {
             type: "Competitive Audit",
-            summary: "Detailed analysis of the TOC navigation found on design systems similar to the JICS Design System.",
+            description: "The Technology Assessment helped to identify some solutions to the limits of the secondary navigation, but it did not reveal a clear pattern for navigating large amount of page content. This required further exploration into design systems, API documentation, and other resources related to the JICS Design System—plus a few modern examples to help ensure the solution included best practices from leading edge websites. I found a few similiarites between the sites and the opportunity to explore some alternatives through a functional prototype.",
             deliverables: [{
               title: "Jenzabar ICS Competitive Analysis for TOC Sidebar",
               image: "./img/JICS9_TOC_Comp-Analysis.png",
@@ -36,7 +36,7 @@ export const employers = [{
           },
           {
             type: "Functional Prototype",
-            summary: "Initial prototype of the TOC Sidebar containing the necessary features derrived from the competitive audit.",
+            description: "During my investigation into the technology stack for JICS, I stumbled across an existing design pattern that sidestepped the issues with navigating the DOM in ASP.NET. This primarily involved styling a set of horizonal tabs to resemble a Table of Content sidebar. The solution also required a completely separate set of components—a set of accordion panels—to display the content in a mobile view. This additional complexity seemed to warrant a similar solution.",
             deliverables: [{
               title: "Jenzabar ICS TOC Sidebar Functional Prototype",
               image: "./img/JICS9_TOC_Prototype.png",
@@ -44,7 +44,7 @@ export const employers = [{
           },
           {
             type: "Internal Review",
-            summary: "Initial review of the prototype revealed the features complicated the experience and doubled the size of the template.",
+            description: "An internal review of the functional prototype was conducted with various members of the JICS team. This included 3 project mangers, 3 developers, and 1 quality assurance tester. Each of the participants were familiar with the design pattern that was used to create the sidebar navigation. However, each of them agreed that the user experience was more suitable for form navigation, and that a simple list of page headers would suffice.",
             deliverables: [{
               title: "Jenzabar ICS TOC Sidebar Internal Review",
               image: "./img/JICS9_TOC_Internal-Review.png",
@@ -52,7 +52,7 @@ export const employers = [{
           },
           {
             type: "Frontend Development",
-            summary: "Updated the front-end template to ensure the TOC Sidebar worked on the standard themes that are available on JICS.",
+            description: "After the internal review, I implemented the best practices for Table of Content navigation that I uncovered in the competitive audit. This involved changes to the ASCX templates for each of pages with large amounts of content in the JICS Design System. These changes were primarily written in HTML, CSS, and JavaScript. Additional changes were made to the Sass/SCSS files that compose the CX Mobile Theme. Each of these resources were compiled and uploaded by hand to the remote server which houses the JICS Design System for CX Portlets.",
             image: "./img/JICS9_TOC.png",
             deliverables: [{
               title: "Jenzabar ICS TOC Design System Update",
@@ -70,11 +70,11 @@ export const employers = [{
         tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
         results: {
-          finalResults: "",
-          keyLearnings: "",
-          nextSteps: ""
+          finalResult: "The end result was a streamlined solution that fit seamlessly into the current product. As part of the JICS Design System, developers can leverage the Table of Content sidebar in their own projects simply by copying-and-pasting the necessary HTML, CSS, and JavaScripts into the specified location.",
+          keyLearnings: "The key lesson is a reminder that simpler is better, not only in the user experience but in the developer experience as well. In both cases, more interactions require more load—either in the user's memory or the browser's. Both of which can slow down the experience quite significantly.",
+          nextSteps: "After finding a wealth of unused components on the cutting room floor, I've continued to explore the tools and technology that are used to build JICS in order to improve upon the JICS Design System and supply developers with modern, responsive, and accessible design solutions."
         },
-        path: "jicsds"
+        path: "jics"
       },
 
 
@@ -86,7 +86,7 @@ export const employers = [{
         role: "Frontend Developer",
         summary: "Created a design system for JICS9 portlets to standardize front-end components.",
         tasks: [{
-          summary: "Created a design system for JICS9 portlets to standardize front-end components.",
+          description: "Created a design system for JICS9 portlets to standardize front-end components.",
           type: "Frontend Development",
           deliverables: [{
             title: "Jenzabar ICS Design System",
@@ -104,11 +104,11 @@ export const employers = [{
         tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
         results: {
-          finalResults: "",
+          finalResult: "",
           keyLearnings: "",
           nextSteps: ""
         },
-        path: "jicsds"
+        path: "jics"
       },
 
 
@@ -125,7 +125,7 @@ export const employers = [{
         process: ["Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Internal Review", "Visual Design", "UI Development"],
         tasks: [{
           type: "Competitive Audit",
-          summary: "Gathered a list of competitors and compared them across a variety of criteria.",
+          description: "Gathered a list of competitors and compared them across a variety of criteria.",
           deliverables: [{
             title: "Find Your Calling Career Explorer Competitive Audit",
             image: "./img/FYC_Career-Exp_Comp-Audit.png",
@@ -133,7 +133,7 @@ export const employers = [{
           }],
         }, {
           type: "Low Fidelity Wireframes",
-          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          description: "Redesigned elements of Find Your Calling to focus on educational institutions.",
           deliverables: [{
             title: "The All-New Career Explorer",
             image: "./img/FYC_Career-Exp_Wireframes.png",
@@ -141,7 +141,7 @@ export const employers = [{
           }],
         }, {
           type: "Interactive Prototype",
-          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          description: "Redesigned elements of Find Your Calling to focus on educational institutions.",
           deliverables: [{
             title: "The All-New Career Explorer",
             image: "./img/FYC_Career-Exp_Prototype.png",
@@ -149,7 +149,7 @@ export const employers = [{
           }],
         }, {
           type: "Internal Review",
-          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          description: "Redesigned elements of Find Your Calling to focus on educational institutions.",
           deliverables: [{
             title: "The All-New Career Explorer",
             image: "./img/FYC_Career-Exp_Review.png",
@@ -157,7 +157,7 @@ export const employers = [{
           }],
         }, {
           type: "Frontend Development",
-          summary: "Redesigned elements of Find Your Calling to focus on educational institutions.",
+          description: "Redesigned elements of Find Your Calling to focus on educational institutions.",
           deliverables: [{
             title: "The All-New Career Explorer",
             image: "./img/FYC_Career-Exp_Frontend-Dev.png",
@@ -168,7 +168,7 @@ export const employers = [{
         tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["Bootstrap", "Sass", "Handlebars"],
         results: {
-          finalResults: "",
+          finalResult: "",
           keyLearnings: "",
           nextSteps: ""
         },
@@ -187,7 +187,7 @@ export const employers = [{
         solution: "",
         process: [],
         tasks: [{
-          summary: "",
+          description: "",
           deliverables: [{
             title: "FYC Design System",
             image: "./img/FYC_Pattern-Lab.png",
@@ -198,7 +198,7 @@ export const employers = [{
         tools: ["Pattern Lab", "VS Code", "Prepros"],
         tech: ["NodeJS", "Bootstrap", "Sass", "Handlebars"],
         results: {
-          finalResults: "",
+          finalResult: "",
           keyLearnings: "",
           nextSteps: ""
         },
@@ -217,7 +217,7 @@ export const employers = [{
         solution: "",
         process: [],
         tasks: [{
-          summary: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
+          description: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
           type: "Frontend Development",
           deliverables: [{
               title: "CRM Student Portlets",
@@ -245,7 +245,7 @@ export const employers = [{
         tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery", "FooTable"],
         results: {
-          finalResults: "",
+          finalResult: "",
           keyLearnings: "",
           nextSteps: ""
         },
@@ -262,7 +262,7 @@ export const employers = [{
         role: "UI Developer",
         summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
         tasks: [{
-          summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
+          description: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
           type: "UI Design",
           deliverables: [{
             title: "Jenzabar ICS Design System",
@@ -280,7 +280,7 @@ export const employers = [{
         tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["ASCX", "Bootstrap", "Sass", "jQuery"],
         results: {
-          finalResults: "",
+          finalResult: "",
           keyLearnings: "",
           nextSteps: ""
         },
@@ -302,7 +302,7 @@ export const employers = [{
         process: ["Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Test", "Visual Design"],
         tasks: [{
           type: "Visual Design",
-          summary: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
+          description: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
           skills: [
             "UX",
             "UI",
@@ -352,7 +352,7 @@ export const employers = [{
         solution: "",
         process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
         tasks: [{
-          summary: "Prototyped SmartGWT components to demonstrate user interactions and responsive layouts.",
+          description: "Prototyped SmartGWT components to demonstrate user interactions and responsive layouts.",
           type: "Frontend Development"
         }],
         skills: ["UX", "Visual Design", "UI", "Prototyping", "Front-End"],
@@ -381,7 +381,7 @@ export const employers = [{
       problem: "Implement new branding guidelines on the main website.",
       solution: "",
       tasks: [{
-        summary: "",
+        description: "",
         deliverables: [{
           title: "Crown Industries Rebranding",
           image: "./img/Crown-Website.png",
@@ -392,7 +392,7 @@ export const employers = [{
       tools: ["Adobe Experience Manager"],
       tech: ["Bootstrap", "Sass", "Grunt"],
       results: {
-        finalResults: "",
+        finalResult: "",
         keyLearnings: "",
         nextSteps: ""
       },
@@ -412,25 +412,25 @@ export const employers = [{
       summary: "Designed the next generation of Grade Control for Trimble Earthworks on the Android platform.",
       // process: ["Field Research", "Ideation", "Validation", "Prototyping", "UI Design"],
       tasks: [{
-          summary: "Brainstormed concepts with machine operators using Gamestorming techniques to generate new ideas.",
+          description: "Brainstormed concepts with machine operators using Gamestorming techniques to generate new ideas.",
           type: "Ideation"
         },
         {
-          summary: "Developed HTML/Bootstrap prototypes for field testing with machine operators.",
+          description: "Developed HTML/Bootstrap prototypes for field testing with machine operators.",
           skills: ["UX", "UI", "Research", "Prototyping"],
           tech: ["Bootstrap"]
         },
         {
-          summary: "Conducted field research of the construction industry across the US and Canada, providing top level reports of my findings to primary stakeholders.",
+          description: "Conducted field research of the construction industry across the US and Canada, providing top level reports of my findings to primary stakeholders.",
           skills: ["UX", "Research", "Analysis", "Reporting"]
         },
         {
-          summary: "Modeled an excavator and work site using Trimble SketchUp.",
+          description: "Modeled an excavator and work site using Trimble SketchUp.",
           skills: ["UI", "3D Modeling"],
           tools: ["SketchUp"]
         },
         {
-          summary: "Provided design assets for Android/Vuforia prototypes, and for production within an Agile environment, which included style guides and custom icons for Android applications.",
+          description: "Provided design assets for Android/Vuforia prototypes, and for production within an Agile environment, which included style guides and custom icons for Android applications.",
           skills: [
             "UI",
             "Android",
@@ -457,19 +457,19 @@ export const employers = [{
       problem: "",
       solution: "",
       tasks: [{
-          summary: "Created annotated wireframes to support the development of Lexis Advance.",
+          description: "Created annotated wireframes to support the development of Lexis Advance.",
         },
         {
-          summary: "Conducted concept testing and usability research with legal professionals, and delivered top level reports of my discussions to primary stakeholders. ",
+          description: "Conducted concept testing and usability research with legal professionals, and delivered top level reports of my discussions to primary stakeholders. ",
         },
         {
-          summary: "Lead brainstorming workshops with legal professionals using Gamestorming techniques to generate new ideas.",
+          description: "Lead brainstorming workshops with legal professionals using Gamestorming techniques to generate new ideas.",
         },
         {
-          summary: "Founding member of the Customer Discovery & Innovation team which designed, prototyped, and tested the most popular concepts from our innovation pipeline.",
+          description: "Founding member of the Customer Discovery & Innovation team which designed, prototyped, and tested the most popular concepts from our innovation pipeline.",
         },
         {
-          summary: "Design Lead for several innovative products including Lexis Answers.",
+          description: "Design Lead for several innovative products including Lexis Answers.",
         }
       ],
       skills: ["UX", "Brainstorming", "Testing", "Research", "Analysis", "Reporting", "Prototyping"],
@@ -489,22 +489,22 @@ export const employers = [{
       problem: "",
       solution: "",
       tasks: [{
-          summary: "Planned the digital experience of social, mobile, and web applications for corporate clients that included P&G, Pearle Vision, and Red Bull.",
+          description: "Planned the digital experience of social, mobile, and web applications for corporate clients that included P&G, Pearle Vision, and Red Bull.",
         },
         {
-          summary: "Lead brainstorming sessions with creative, technical, and business leads to generate new ideas.",
+          description: "Lead brainstorming sessions with creative, technical, and business leads to generate new ideas.",
         },
         {
-          summary: "Illustrated user flows, site maps, and wireframes to assist the design and development teams.",
+          description: "Illustrated user flows, site maps, and wireframes to assist the design and development teams.",
         },
         {
-          summary: "Documented features and functionality for project management, and provided competitive analysis of similar products on the market.",
+          description: "Documented features and functionality for project management, and provided competitive analysis of similar products on the market.",
         },
         {
-          summary: "Conducted usability testing with potential customers and reported insights back to the team.",
+          description: "Conducted usability testing with potential customers and reported insights back to the team.",
         },
         {
-          summary: "Presented initial concepts, customer feedback, and other deliverables to the clients.",
+          description: "Presented initial concepts, customer feedback, and other deliverables to the clients.",
         }
       ],
       skills: ["UX", "Social Media", "Brainstorming", "Research", "Analysis", "Reporting"],
