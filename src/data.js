@@ -14,7 +14,7 @@ export const employers = [{
         image: "./img/JICS9_TOC.png",
         imageDesc: "Mobile and desktop view of the TOC Sidebar on the JICS Design System.",
         role: "UI Developer",
-        summary: "Developed a responsive sidebar for the JICS Design System.",
+        summary: "Implemented a table of contents sidebar for the JICS Design System.",
         problem: "Updates to the Jenzabar ICS Design System outgrew the limitations of the secondary navbar and required additional navigation to help the user move through long pages of content.",
         solution: "Create a responsive sidebar which resembles a Table of Contents and floats alongside the content as the user scrolls down the page with markers that identify their location.",
         process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
