@@ -144,7 +144,7 @@ export default function ProjectModal(props) {
           {project.role && (
             <div className="flex flex-col w-full lg:w-1/2 px-2">
               <h6 className="uppercase text-xs font-bold text-blueGray-500 mb-2">
-                Role
+                Role(s)
               </h6>
               <p className="mb-8 text-blueGray-200 text-lg leading-relaxed">
                 {project.role}

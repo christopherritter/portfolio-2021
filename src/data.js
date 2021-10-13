@@ -6,12 +6,11 @@ export const employers = [{
     location: "Blue Ash, Ohio",
     projects: [
 
-
       {
         name: "Table of Contents Sidebar",
         product: "Jenzabar ICS",
         date: "April 2021",
-        role: "UI Developer",
+        role: "UX/UI Designer, Frontend Developer",
         summary: "Implemented a Table of Contents (TOC) sidebar for navigating through separate page sections on the JICS Design System.",
         image: "./img/JICS9_TOC.png",
         imageDesc: "Mobile and desktop view of the Table of Contents (TOC) Sidebar on the JICS Design System.",
@@ -77,11 +76,10 @@ export const employers = [{
         path: "jics"
       },
 
-
       {
         name: "JICS Design System",
         product: "Jenzabar ICS",
-        role: "Frontend Developer",
+        role: "UX/UI Designer, Frontend Developer",
         summary: "Created a new design system for Jenzabar ICS to standardize the development of front-end components.",
         image: "./img/JICS9_Design-System.png",
         imageDesc: "JICS Design System",
@@ -111,16 +109,15 @@ export const employers = [{
         path: "jics"
       },
 
-
       {
         name: "Career Explorer",
         product: "Find Your Calling",
         date: "January 2019",
-        role: "UX Designer",
-        summary: "Created a new Career Explorer for Find Your Calling to help prospective students to explore their career choices.",
+        role: "UX/UI Designer, Frontend Developer",
+        summary: "Created a new Career Explorer for Find Your Calling to help prospective students explore their career choices.",
         image: "./img/FYC_Career-Explorer.png",
         imageDesc: "Final release of the all-new Career Explorer for Find Your Calling on desktop and mobile devices.",
-        problem: "Prospective students received a long list of career choices after completing their career assessment test without any means of sorting or filtering through the results.",
+        problem: "After completing an online career assessment, prospective students were shown a long list of career options without any means of sorting or filtering through the results.",
         solution: "Create a set of filters that enable prospective students to select certain job criteria (e.g., salary range, required education) and explore career options related to their interests.",
         process: ["Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Internal Review", "Visual Design", "UI Development"],
         tasks: [{
@@ -175,13 +172,12 @@ export const employers = [{
         path: "fyc"
       },
 
-
       {
         name: "Pattern Lab",
         product: "Find Your Calling",
         image: "./img/FYC_Pattern-Lab.png",
         imageDesc: "Pattern Lab",
-        role: "Frontend Developer",
+        role: "UX/UI Designer, Frontend Developer",
         summary: "Implemented Pattern Lab with Handlebars/SCSS to test and deliver front-end components for Find Your Calling.",
         problem: "",
         solution: "",
@@ -205,13 +201,12 @@ export const employers = [{
         path: "fyc"
       },
 
-
       {
         name: "Responsive Layouts",
         product: "Jenzabar ICS",
         image: "./img/JICS9.png",
         imageDesc: "Responsive Layouts for Jenzabar ICS",
-        role: "UI Developer",
+        role: "UX/UI Designer, Frontend Developer",
         summary: "Implemented fully responsive layouts on a wide assortment of Jenzabar ICS portlets using Bootstrap and jQuery.",
         problem: "",
         solution: "",
@@ -252,14 +247,12 @@ export const employers = [{
         path: "jics"
       },
 
-
-
       {
         name: "CX Mobile Theme",
         product: "Jenzabar ICS",
         image: "./img/JICS9_CX-Mobile-Theme.png",
         imageDesc: "CX Mobile Theme",
-        role: "UI Developer",
+        role: "UX/UI Designer, Frontend Developer",
         summary: "Created new base theme to implement the new branding guidelines for Jenzabar products with Sass CSS.",
         tasks: [{
           description: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
@@ -287,15 +280,12 @@ export const employers = [{
         path: "jics"
       },
 
-
-
-
       {
         name: "Jenzabar CX 10",
         product: "Jenzabar CX",
         image: "./img/CX10.png",
         imageDesc: "Jenzabar CX 10",
-        role: "UI Designer",
+        role: "UX/UI Designer",
         summary: "Designed the next generation of Jenzabar CX for campus-wide administration on PC and Macintosh systems.",
         problem: "",
         solution: "",
@@ -339,14 +329,12 @@ export const employers = [{
         path: "cx"
       },
 
-
-
       {
         name: "Jenzabar JX",
         product: "Jenzabar JX",
         imageDesc: "Jenzabar JX",
         image: "./img/JX.png",
-        role: "UX Designer",
+        role: "UX/UI Designer",
         summary: "Provided UX/UI design assistance to local, remote, and offshore developers working on updates to Jenzabar JX.",
         problem: "",
         solution: "",
@@ -365,6 +353,7 @@ export const employers = [{
         tech: ["SmartGWT"],
         path: "jx"
       }
+
     ],
   },
   {
@@ -373,8 +362,7 @@ export const employers = [{
     startDate: 2015,
     endDate: 2015,
     location: "New Bremen, Ohio",
-    projects: [
-      {
+    projects: [{
       name: "Crown Industries Rebranding",
       product: "Crown.com",
       role: "Frontend Developer",
@@ -406,10 +394,11 @@ export const employers = [{
     startDate: 2014,
     endDate: 2015,
     location: "Huber Heights, Ohio",
-    projects: [{
+    projects: [
+    {
       name: "Grade Control for Excavators",
       product: "Trimble Earthworks",
-      role: "UX Designer",
+      role: "UX/UI Designer",
       summary: "Designed the next generation of Grade Control for Trimble Earthworks on the Android platform.",
       // process: ["Field Research", "Ideation", "Validation", "Prototyping", "UI Design"],
       tasks: [{
