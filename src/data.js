@@ -11,10 +11,10 @@ export const employers = [{
         name: "Table of Contents Sidebar",
         product: "Jenzabar ICS",
         date: "April 2021",
-        image: "./img/JICS9_TOC.png",
-        imageDesc: "Mobile and desktop view of the TOC Sidebar on the JICS Design System.",
         role: "UI Developer",
-        summary: "Implemented a table of contents sidebar for the JICS Design System.",
+        summary: "Implemented a Table of Contents (TOC) sidebar for navigating through separate page sections on the JICS Design System.",
+        image: "./img/JICS9_TOC.png",
+        imageDesc: "Mobile and desktop view of the Table of Contents (TOC) Sidebar on the JICS Design System.",
         problem: "Updates to the Jenzabar ICS Design System outgrew the limitations of the secondary navbar and required additional navigation to help the user move through long pages of content.",
         solution: "Create a responsive sidebar which resembles a Table of Contents and floats alongside the content as the user scrolls down the page with markers that identify their location.",
         process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
@@ -81,17 +81,17 @@ export const employers = [{
       {
         name: "JICS Design System",
         product: "Jenzabar ICS",
+        role: "Frontend Developer",
+        summary: "Created a new design system for Jenzabar ICS to standardize the development of front-end components.",
         image: "./img/JICS9_Design-System.png",
         imageDesc: "JICS Design System",
-        role: "Frontend Developer",
-        summary: "Created a design system for JICS9 portlets to standardize front-end components.",
         tasks: [{
-          description: "Created a design system for JICS9 portlets to standardize front-end components.",
+          description: "Created a design system for Jenzabar ICS to standardize front-end components.",
           type: "Frontend Development",
           deliverables: [{
             title: "Jenzabar ICS Design System",
             image: "./img/JICS9_Design-System.png",
-            summary: "A new design system was created for JICS9 to display the components in use by the CX portlets. The system leveraged the existing product to ensure the proper display of style sheets, templates, and other aspects of the design."
+            summary: "A new design system was created for Jenzabar ICS to display the front-end components in use by the CX portlets. The system leveraged the existing product to ensure the proper display of style sheets, templates, and other aspects of the design."
           }]
         }],
         skills: [
@@ -116,10 +116,10 @@ export const employers = [{
         name: "Career Explorer",
         product: "Find Your Calling",
         date: "January 2019",
+        role: "UX Designer",
+        summary: "Created a new Career Explorer for Find Your Calling to help prospective students to explore their career choices.",
         image: "./img/FYC_Career-Explorer.png",
         imageDesc: "Final release of the all-new Career Explorer for Find Your Calling on desktop and mobile devices.",
-        role: "UX Designer",
-        summary: "Created an all-new Career Explorer to help prospective students to explore their career choices.",
         problem: "Prospective students received a long list of career choices after completing their career assessment test without any means of sorting or filtering through the results.",
         solution: "Create a set of filters that enable prospective students to select certain job criteria (e.g., salary range, required education) and explore career options related to their interests.",
         process: ["Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Internal Review", "Visual Design", "UI Development"],
@@ -182,7 +182,7 @@ export const employers = [{
         image: "./img/FYC_Pattern-Lab.png",
         imageDesc: "Pattern Lab",
         role: "Frontend Developer",
-        summary: "Implemented Pattern Lab to deliver redesigned elements for Find Your Calling.",
+        summary: "Implemented Pattern Lab with Handlebars/SCSS to test and deliver front-end components for Find Your Calling.",
         problem: "",
         solution: "",
         process: [],
@@ -212,12 +212,12 @@ export const employers = [{
         image: "./img/JICS9.png",
         imageDesc: "Responsive Layouts for Jenzabar ICS",
         role: "UI Developer",
-        summary: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
+        summary: "Implemented fully responsive layouts on a wide assortment of Jenzabar ICS portlets using Bootstrap and jQuery.",
         problem: "",
         solution: "",
         process: [],
         tasks: [{
-          description: "Implemented responsive layouts for JICS9 portlets using Bootstrap and jQuery.",
+          description: "Implemented responsive layouts for Jenzabar ICS using Bootstrap and jQuery.",
           type: "Frontend Development",
           deliverables: [{
               title: "CRM Student Portlets",
@@ -260,14 +260,14 @@ export const employers = [{
         image: "./img/JICS9_CX-Mobile-Theme.png",
         imageDesc: "CX Mobile Theme",
         role: "UI Developer",
-        summary: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
+        summary: "Created new base theme to implement the new branding guidelines for Jenzabar products with Sass CSS.",
         tasks: [{
           description: "Designed new base theme to implement the new branding guidelines for Jenzabar products.",
           type: "UI Design",
           deliverables: [{
             title: "Jenzabar ICS Design System",
             image: "./img/JICS9_CX-Mobile-Theme.png",
-            summary: "Created a new base theme for JICS9 which incorporated the new branding guidlines for Jenzabar products. Special attention was given to the Sass variables so as to make customization easier for the end user."
+            summary: "Created a new base theme for Jenzabar ICS which incorporated the new branding guidlines for Jenzabar products. Special attention was given to the Sass variables so as to make customization easier for the end user."
           }]
         }, ],
         skills: [
@@ -347,7 +347,7 @@ export const employers = [{
         imageDesc: "Jenzabar JX",
         image: "./img/JX.png",
         role: "UX Designer",
-        summary: "Assisted local, remote, and offshort development teams with the design of Jenzbar JX.",
+        summary: "Provided UX/UI design assistance to local, remote, and offshore developers working on updates to Jenzabar JX.",
         problem: "",
         solution: "",
         process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
@@ -373,7 +373,8 @@ export const employers = [{
     startDate: 2015,
     endDate: 2015,
     location: "New Bremen, Ohio",
-    projects: [{
+    projects: [
+      {
       name: "Crown Industries Rebranding",
       product: "Crown.com",
       role: "Frontend Developer",

@@ -10,9 +10,9 @@ export default function About() {
             Hello, I'm Chris.
           </h1>
           <p className="mb-8 leading-relaxed">
-            I'm a UX Designer &amp; Frontend Developer from Springboro, Ohio. I
+            I'm a UX/UI Designer &amp; Frontend Developer from Springboro, Ohio. I
             provide systemic design solutions—from wireframes and workflows to
-            prototypes and production-ready assets for product development.
+            prototypes and production-ready assets for application development.
           </p>
           <div className="flex justify-center">
             <a
