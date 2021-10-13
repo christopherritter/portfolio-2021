@@ -124,49 +124,54 @@ export const employers = [{
           type: "Competitive Audit",
           description: "In order to wrap my head around the concept of a Career Explorer, I started by taking a closer look at a handful of career aptitude tests that are available on the Internet. I was mainly interested in how they displayed the test results to see what kind of filters and sorting tools they provided to their users. The majority of these sites showed related careers without any filtering tools. Only one included all of the features under consideration for Find Your Calling.",
           deliverables: [{
-            title: "Find Your Calling Career Explorer Competitive Audit",
-            image: "./img/FYC_Career-Exp_Comp-Audit.png",
-            summary: "Find Your Calling Career Explorer Competitive Audit"
+            title: "Competitive Audit of the new Career Explorer for Find Your Calling.",
+            image: "./img/FYC_Career-Explorer_Comp-Audit.png",
           }],
         }, {
           type: "Low Fidelity Wireframes",
           description: "I started designing the all-new Career Explorer by gathering a list of existing components from the FYC Design System including the header, footer, and navbar, along with smaller elements like the search bar and horizontal pill navbar. This allowed the team to focus on the two new components, the filters and result cards, and how they were displayed on deskop browsers, tablets, and other mobile devices.",
           deliverables: [{
-            title: "The All-New Career Explorer",
-            image: "./img/FYC_Career-Exp_Wireframes.png",
-            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+            title: "Initial set of low fidelity wireframes to help visualize the new Career Explorer.",
+            image: "./img/FYC_Career-Explorer_Wireframes.png",
           }],
         }, {
           type: "Interactive Prototype",
           description: "Once all of the business requirements were covered by the wireframes, additional states were added to the XD prototype to visualize the user paths to and from the Career Explorer. This included visualizations of the various filters and sorting tools for each of the responsive breakpoints (i.e., desktop, tablet, mobile). Links were added between each of these states to test the logic and efficiency of the user flow.",
           deliverables: [{
-            title: "The All-New Career Explorer",
-            image: "./img/FYC_Career-Exp_Prototype.png",
-            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+            title: "Interactive prototype of the Career Explorer built with Adobe XD.",
+            image: "./img/FYC_Career-Explorer_Prototype.png",
           }],
         }, {
           type: "Internal Review",
           description: "After completing the interactive prototype, a small number of internal people were selected to provide feedback on the sorting and filtering tools. This included an account manager, a project manager, and a technical advisor. They all liked the general approach and shared some of their own ideas to help condense the content and show the career cards higher up on the page.",
           deliverables: [{
-            title: "The All-New Career Explorer",
-            image: "./img/FYC_Career-Exp_Review.png",
-            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
+            title: "Initial concept reviewed by the team (left) and the updates following the review (right).",
+            image: "./img/FYC_Career-Explorer_Review.png",
           }],
         }, {
           type: "Frontend Development",
           description: "The interactive prototype that was built in Adobe XD, and based on the layout of current components, made it easy to add the new filters and card components to the FYC Design System. These updates included the creation of Mustache templates for the new components, dummy data for the filter criteria and the search results, along with the compiled Sass/SCSS for theme updates, and jQuery for user interactions.",
-          deliverables: [{
-            title: "The All-New Career Explorer",
-            image: "./img/FYC_Career-Exp_Frontend-Dev.png",
-            summary: "The updates to Find Your Calling included an entirely new way to navigate career choices. This was called the Career Explorer given its ability to search and filter career choices."
-          }],
+          deliverables: [
+            {
+              title: "The all-new Career Explorer for Find Your Calling presented on Pattern Lab.",
+              image: "./img/FYC_Career-Explorer_Pattern-Lab.png",
+            },
+            {
+              title: "Mobile view of the new Career Explorer for Find Your Calling presented on Pattern Lab.",
+              image: "./img/FYC_Career-Explorer_Pattern-Lab_Mobile.png",
+            },
+            {
+              title: "Mobile view of the new Career Explorer with content filters overlaying the career cards.",
+              image: "./img/FYC_Career-Explorer_Pattern-Lab_Mobile-Filters.png",
+            }
+          ],
         }],
         skills: ["UX", "UI", "Visual Design", "Prototyping"],
         tools: ["Adobe XD", "VS Code", "Prepros"],
         tech: ["Bootstrap", "Sass", "Handlebars"],
         results: {
           finalResult: "Despite a short delivery schedule and an ever-increasing set of business requirements, the creation of the all-new Career Explorer was a sight to behold. Due in large part to the inclusion of and alignment with the FYC Design System, the addition of complex new features were drastically simplified by reducing them down to one or new two components. The final result was ready for production faster than previous updates.",
-          keyLearnings: "Leveraging the design system during the ideation process has its benefits and drawbacks. From the technical point of view, the benefits to the development schedule were quite evident. However, this unique and somewhat magical approach can be uncomfortable for established teams and would benefit from a deep dive into understanding how design systems can benefit the creation of new features for an existing product.",
+          keyLearnings: "Leveraging the design system during the ideation process has its benefits and drawbacks. From the technical point of view, the positive impact on the release schedule was quite evident. However, this unique and somewhat magical approach can be uncomfortable for established teams and would benefit from a deep dive into understanding how design systems can benefit the creation of new features for an existing product.",
           nextSteps: "The Career Explorer would be the last update our team would make to Find Your Calling, but the lessons learned about the application, utility, and adoption of design systems would prove to be invaluable for future projects."
         },
         path: "fyc"
