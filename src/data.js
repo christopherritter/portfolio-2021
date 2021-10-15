@@ -288,49 +288,120 @@ export const employers = [{
       {
         name: "Jenzabar CX 10",
         product: "Jenzabar CX",
-        image: "./img/CX10.png",
-        imageDesc: "Jenzabar CX 10",
+        date: "April 2017",
         role: "UX/UI Designer",
         summary: "Designed the next generation of Jenzabar CX for campus-wide administration on PC and Macintosh systems.",
+        image: "./img/CX10.png",
+        imageDesc: "The home screen for Jenzabar CX 10 for Windows along with a prototype of the Vendor Entry screen.",
         problem: "",
         solution: "",
-        process: ["Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Test", "Visual Design"],
-        tasks: [{
-          type: "Visual Design",
-          description: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
-          skills: [
-            "UX",
-            "UI",
-            "Prototyping",
-            "Front-End",
-            "Research",
-            "Analysis",
-            "Reporting"
-          ],
-          tools: ["Adobe XD", "VS Code", "QT Creator"],
-          tech: ["QT", "QSS"],
-          deliverables: [{
-              title: "CX 10 Home Screen",
-              image: "./img/CX10_Home.png",
-              summary: "The home screen for CX 10 provides users with a searchable directory of their available applications. When the user launches an application it appears on a recently viewed list next to the directory."
-            },
-            {
-              title: "Login and Release Selection",
-              image: "./img/CX10_Installer.png",
-              summary: "The desktop version of CX10 provided customers with secure access to their institutional data. After signing in, users have the option to select from multiple instances of their data (known as releases)."
-            },
-            {
-              title: "Personalized Fonts and Colors",
-              image: "./img/CX10_User-Settings.png",
-              summary: "The settings screen enabled users to customize the font sizes and colors of their local client. Theme settings can be saved and loaded from a separate file to help enforce consistency at customer sites."
-            },
-            {
-              title: "Interactive Prototypes",
-              image: "./img/CX10_Prototypes.png",
-              summary: "Interactive prototypes were created in Adobe XD to visualize the user interactions with the client. Feedback was gathered internally and from clients to help determine the look and feel of the application."
-            }
-          ]
-        }],
+        process: ["Requirements Gathering", "Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Testing", "Sentiment Analysis", "Visual Design"],
+        tasks: [
+
+          {
+            type: "Requirements Gathering",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/CX10_Requirements-Gathering.png",
+                title: "Base requirements gathered from project managers, developers, and current users of Jenzabar CX. Overlaid on top of the PuTTY application which customers use to access the product."
+              },
+            ],
+          },
+
+          {
+            type: "Competitive Audit",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/CX10_Competitive-Audit.png",
+                title: "Spreadsheet of the competitors to Jenzabar CX alongside modern tools for group interaction with online documents."
+              },
+            ],
+          },
+
+          {
+            type: "Low Fidelity Wireframes",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/CX10_Wireframes.png",
+                title: "Early set of wireframes used to visualize the app sidebar, sidebar menu, and the basic layout for existing CX screens. Creating with Adobe InDesign."
+              },
+            ],
+          },
+
+          {
+            type: "Interactive Prototype",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/CX10_Prototype.png",
+                title: "Interactive prototype of the navigation features for the new Jenzabar CX 10. Created with Adobe XD."
+              },
+            ],
+          },
+
+          {
+            type: "Usability Testing",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/CX10_Usability-Testing.png",
+                title: "The discussion guide used to conduct the usability test overlaid on top of the early release of CX10 that was used during the test."
+              },
+            ],
+          },
+
+          {
+            type: "Sentiment Analysis",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/CX10_Sentiment-Analysis.png",
+                title: "Spreadsheet of the customers interviewed for the usability test and their comments regarding key features of CX 10, alongside a photo of the recordings that were used to conduct the sentiment analysis."
+              },
+            ],
+          },
+
+          {
+            type: "Visual Design",
+            description: "Designed the front-end for the new desktop version of Jenzabar CX 10.",
+            skills: [
+              "UX",
+              "UI",
+              "Prototyping",
+              "Front-End",
+              "Research",
+              "Analysis",
+              "Reporting"
+            ],
+            tools: ["Adobe XD", "VS Code", "QT Creator"],
+            tech: ["QT", "QSS"],
+            deliverables: [
+              {
+                title: "CX 10 Home Screen",
+                image: "./img/CX10_Home.png",
+                summary: "The home screen for CX 10 provides users with a searchable directory of their available applications. When the user launches an application it appears on a recently viewed list next to the directory."
+              },
+              {
+                title: "Login and Release Selection",
+                image: "./img/CX10_Login.png",
+                summary: "The desktop version of CX10 provided customers with secure access to their institutional data. After signing in, users have the option to select from multiple instances of their data (known as releases)."
+              },
+              {
+                title: "Personalized Fonts and Colors",
+                image: "./img/CX10_User-Settings.png",
+                summary: "The settings screen enabled users to customize the font sizes and colors of their local client. Theme settings can be saved and loaded from a separate file to help enforce consistency at customer sites."
+              },
+              {
+                title: "File Browser",
+                image: "./img/CX10_File-Browser.png",
+                summary: ""
+              },
+            ]
+          }
+      ],
         path: "cx"
       },
 
