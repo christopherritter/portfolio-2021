@@ -151,8 +151,7 @@ export const employers = [{
         }, {
           type: "Frontend Development",
           description: "The interactive prototype that was built in Adobe XD, and based on the layout of current components, made it easy to add the new filters and card components to the FYC Design System. These updates included the creation of Mustache templates for the new components, dummy data for the filter criteria and the search results, along with the compiled Sass/SCSS for theme updates, and jQuery for user interactions.",
-          deliverables: [
-            {
+          deliverables: [{
               title: "The all-new Career Explorer for Find Your Calling presented on Pattern Lab.",
               image: "./img/FYC_Career-Explorer_Pattern-Lab.png",
             },
@@ -293,75 +292,72 @@ export const employers = [{
         summary: "Designed the next generation of Jenzabar CX for campus-wide administration on PC and Macintosh systems.",
         image: "./img/CX10.png",
         imageDesc: "The home screen for Jenzabar CX 10 for Windows along with a prototype of the Vendor Entry screen.",
-        problem: "",
-        solution: "",
-        process: ["Requirements Gathering", "Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Testing", "Sentiment Analysis", "Visual Design"],
+        problem: "Jenzabar CX users were primarily accessing their data through a Telnet client. The outdated interface was challenging for new users and somewhat embarrassing to look at.",
+        solution: "Create a new desktop application for Mac and Windows that incorporates a modern app-based approach to a variety of customizable screens and applications.",
+        process: ["Requirements Gathering", "Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Testing", "Sentiment Analysis", "Executive Summary", "Visual Design"],
         tasks: [
 
           {
             type: "Requirements Gathering",
-            description: "",
-            deliverables: [
-              {
-                image: "./img/CX10_Requirements-Gathering.png",
-                title: "Base requirements gathered from project managers, developers, and current users of Jenzabar CX. Overlaid on top of the PuTTY application which customers use to access the product."
-              },
-            ],
+            description: "When your old product is primarily accessible through a text-based Telnet client, it goes without saying that there is plenty of feedback on the user experience, especially when it's been on the market for decades. Gathering the feedback involved discussions with project managers, developers, and current users of the product, then prioritizing the list based on the amount of attention that each issue received.",
+            deliverables: [{
+              image: "./img/CX10_Requirements-Gathering.png",
+              title: "Base requirements gathered from project managers, developers, and current users of Jenzabar CX. Overlaid on top of the PuTTY application which customers use to access the product."
+            }, ],
           },
 
           {
             type: "Competitive Audit",
-            description: "",
-            deliverables: [
-              {
-                image: "./img/CX10_Competitive-Audit.png",
-                title: "Spreadsheet of the competitors to Jenzabar CX alongside modern tools for group interaction with online documents."
-              },
-            ],
+            description: "While there are plenty of direct competitors to Jenzabar CX within the marketplace for Higher Education, including similar products for different platforms offered by Jenzabar, there weren't many that were native to the desktop experience. This required looking at indirect competitors in the open source arena, alongside more modern desktop software that used an app-based approach to their content channels.",
+            deliverables: [{
+              image: "./img/CX10_Competitive-Audit.png",
+              title: "Spreadsheet of the competitors to Jenzabar CX alongside modern tools for group interaction with online documents."
+            }, ],
           },
 
           {
             type: "Low Fidelity Wireframes",
-            description: "",
-            deliverables: [
-              {
-                image: "./img/CX10_Wireframes.png",
-                title: "Early set of wireframes used to visualize the app sidebar, sidebar menu, and the basic layout for existing CX screens. Creating with Adobe InDesign."
-              },
-            ],
+            description: "While my knowledge of CX screens was limited, I knew that customers could navigate through available screens in a basic menu structure. This translated well into  sidebar navigation but was an awkward fit for the app metaphor. Additional testing would be necessary to see how well current menu data fit into separate application categories, and whether customers would understand the new paradigm.",
+            deliverables: [{
+              image: "./img/CX10_Wireframes.png",
+              title: "Early set of wireframes used to visualize the app sidebar, sidebar menu, and the basic layout for existing CX screens. Creating with Adobe InDesign."
+            }, ],
           },
 
           {
             type: "Interactive Prototype",
-            description: "",
-            deliverables: [
-              {
-                image: "./img/CX10_Prototype.png",
-                title: "Interactive prototype of the navigation features for the new Jenzabar CX 10. Created with Adobe XD."
-              },
-            ],
+            description: "An interactive prototype was created to visualize app metaphor and how it was expressed both in the app sidebar and in the sidebar navigation. The prototype also included multiple screens from CX to show how existing templates—which were defined for an 80-column screen due for Telnet access—could fit within a responsive layout that could accommodate a variety of desktop resolutions.",
+            deliverables: [{
+              image: "./img/CX10_Prototype.png",
+              title: "Interactive prototype of the navigation features for the new Jenzabar CX 10. Created with Adobe XD."
+            }, ],
           },
 
           {
             type: "Usability Testing",
-            description: "",
-            deliverables: [
-              {
-                image: "./img/CX10_Usability-Testing.png",
-                title: "The discussion guide used to conduct the usability test overlaid on top of the early release of CX10 that was used during the test."
-              },
-            ],
+            description: "A cross sample of customers were interviewed during the 2017 Jenzabar Annual Meeting (JAM). This included 5 managers, 4 directors, 1 CIO, and 1 developer, for a total of 11 users with plenty of experience using Jenzabar CX products. They sat down with me for a 1-on-1 conversation that focused on an early release of the new CX 10 and followed a discussion guide which directed participants through the new features.",
+            deliverables: [{
+              image: "./img/CX10_Usability-Testing.png",
+              title: "The discussion guide used to conduct the usability test overlaid on top of the early release of CX10 that was used during the test."
+            }, ],
           },
 
           {
             type: "Sentiment Analysis",
-            description: "",
-            deliverables: [
-              {
-                image: "./img/CX10_Sentiment-Analysis.png",
-                title: "Spreadsheet of the customers interviewed for the usability test and their comments regarding key features of CX 10, alongside a photo of the recordings that were used to conduct the sentiment analysis."
-              },
-            ],
+            description: "Recordings of the participants of the usability test were captured on Evernote in order to provide a transcript of each conversation. This enabled me to identify certain themes in each section of the discussion guide. After tagging the amount of times that each topic was mentioned in the discussion, I was able to paint a picture of how popular (or unpopular) each of the new features were for potential users.",
+            deliverables: [{
+              image: "./img/CX10_Sentiment-Analysis.png",
+              title: "Spreadsheet of the customers interviewed for the usability test and their comments regarding key features of CX 10, alongside a photo of the recordings that were used to conduct the sentiment analysis."
+            }, ],
+          },
+
+          {
+            type: "Executive Summary",
+            description: "An executive summary was written for internal folks to get a better idea of what our customers thought about the new Jenzabar CX 10. It included the methodology, key takeaways, along with anonymous quotes taken directly from the customers. It also included some areas of the design that need improvement, plus other discoveries that came out of the interviews but weren't a part of the discussion guide.",
+            deliverables: [{
+              image: "./img/CX10_Executive-Summary.png",
+              title: "Executive Summary of the sentiment analysis for the new Jenzabar CX 10."
+            }, ],
           },
 
           {
@@ -378,30 +374,30 @@ export const employers = [{
             ],
             tools: ["Adobe XD", "VS Code", "QT Creator"],
             tech: ["QT", "QSS"],
-            deliverables: [
-              {
-                title: "CX 10 Home Screen",
+            deliverables: [{
                 image: "./img/CX10_Home.png",
-                summary: "The home screen for CX 10 provides users with a searchable directory of their available applications. When the user launches an application it appears on a recently viewed list next to the directory."
+                title: "The home screen for CX 10 provides users with a searchable directory of their available applications."
               },
               {
-                title: "Login and Release Selection",
                 image: "./img/CX10_Login.png",
-                summary: "The desktop version of CX10 provided customers with secure access to their institutional data. After signing in, users have the option to select from multiple instances of their data (known as releases)."
+                title: "The desktop version of CX10 provided customers with secure access to their institutional data."
               },
               {
-                title: "Personalized Fonts and Colors",
                 image: "./img/CX10_User-Settings.png",
-                summary: "The settings screen enabled users to customize the font sizes and colors of their local client. Theme settings can be saved and loaded from a separate file to help enforce consistency at customer sites."
+                title: "The settings screen enabled users to customize the font sizes and colors of their local client."
               },
               {
-                title: "File Browser",
                 image: "./img/CX10_File-Browser.png",
-                summary: ""
+                summary: "The file browser enabled customers to upload text files and other documents to their internal servers."
               },
             ]
           }
-      ],
+        ],
+        results: {
+          finalResult: "The release of Jenzabar CX 10 was an amazing success for the company. Even though the company was currently in the process of releasing another new platform called J1, older clients who did not wish to upgrade were ecstatic to switch over to a desktop application that replaced their old Telnet clients. Not only was it easier to use, but it was much less embarrassing to look at!",
+          keyLearnings: "Over the course of the project we were constantly reminded of how important the keyboard was to our customers. Our usability tests revealed that the mouse only slowed down their input, and that keyboard shortcuts were critical to their efficiency. This included keyboard access to the search menu and other new features.",
+          nextSteps: "Designing the desktop client for Jenzabar CX 10 was only the first step in a very long journey to recreate the entire CX universe. Thankfully the lessons we learned at the outset of our journey proved to be invaluable to future development and business decisions."
+        },
         path: "cx"
       },
 
@@ -470,8 +466,7 @@ export const employers = [{
     startDate: 2014,
     endDate: 2015,
     location: "Huber Heights, Ohio",
-    projects: [
-    {
+    projects: [{
       name: "Grade Control for Excavators",
       product: "Trimble Earthworks",
       role: "UX/UI Designer",
