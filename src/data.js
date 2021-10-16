@@ -394,7 +394,7 @@ export const employers = [{
           }
         ],
         results: {
-          finalResult: "The release of Jenzabar CX 10 was an amazing success for the company. Even though the company was currently in the process of releasing another new platform called J1, older clients who did not wish to upgrade were ecstatic to switch over to a desktop application that replaced their old Telnet clients. Not only was it easier to use, but it was much less embarrassing to look at!",
+          finalResult: "The release of Jenzabar CX 10 was a big success story for the product. Even though the company was currently in the process of releasing a completely new platform called J1, older clients who did not wish to upgrade were ecstatic to switch over to a desktop application that replaced their old Telnet clients. Not only was it easier to use, but it was much less embarrassing to look at.",
           keyLearnings: "Over the course of the project we were constantly reminded of how important the keyboard was to our customers. Our usability tests revealed that the mouse only slowed down their input, and that keyboard shortcuts were critical to their efficiency. This included keyboard access to the search menu and other new features.",
           nextSteps: "Designing the desktop client for Jenzabar CX 10 was only the first step in a very long journey to recreate the entire CX universe. Thankfully the lessons we learned at the outset of our journey proved to be invaluable to future development and business decisions."
         },
@@ -402,23 +402,81 @@ export const employers = [{
       },
 
       {
-        name: "Jenzabar JX",
+        name: "Lead Management",
         product: "Jenzabar JX",
-        imageDesc: "Jenzabar JX",
-        image: "./img/JX.png",
-        role: "UX/UI Designer",
-        summary: "Provided UX/UI design assistance to local, remote, and offshore developers working on updates to Jenzabar JX.",
+        date: "September 2015",
+        imageDesc: "Lead Management for Jenzabar JX",
+        image: "./img/JX-SEM_Lead-Management.png",
+        role: "UX Designer",
+        summary: "Provided UX design assistance to local, remote, and offshore developers working on updates to Jenzabar JX.",
         problem: "",
         solution: "",
-        process: ["Technology Assessment", "Competitive Audit", "Functional Prototype", "Internal Review", "Frontend Development"],
-        tasks: [{
-          description: "Prototyped SmartGWT components to demonstrate user interactions and responsive layouts.",
-          type: "Frontend Development"
-        }],
-        skills: ["UX", "Visual Design", "UI", "Prototyping", "Front-End"],
+        process: ["Requirements Gathering", "Low Fidelity Wireframes", "Internal Review", "Functional Prototype", "Style Guide"],
+        tasks: [
+
+
+          {
+            type: "Requirements Gathering",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/JX-SEM_User-Stories_Lead-Management.png",
+                title: "User Stories document for Lead Management."
+              },
+              {
+              image: "./img/JX-SEM_Requirements-Gathering_Lead-Management.png",
+              title: "JIRA list of features to support the management of leads."
+            }, ],
+          },
+
+          {
+            type: "Low Fidelity Wireframes",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/JX-SEM_Wireframes_Lead-Maintenance.png",
+                title: "Low fidelity wirefame of the lead maintenance tab for Lead Management."
+              }, 
+              {
+                image: "./img/JX-SEM_Wireframes_Lead-Maintenance_Lead.png",
+                title: "Low fidelity wirefame of the lead view of the lead maintenance tab."
+              }, 
+            ],
+          },
+
+          {
+            type: "Functional Prototype",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/JX-SEM_Prototype_Lead-Maintenance.png",
+                title: "Functional prototype of the lead maintenance tab for Lead Management."
+              }, 
+              {
+                image: "./img/JX-SEM_Prototype_Lead-Maintenance_Lead.png",
+                title: "Functional prototype of the lead record from the lead maintenance tab."
+              }, 
+              {
+                image: "./img/JX-SEM_Prototype_Lead-Maintenance_Lead-Collapsed.png",
+                title: "Functional prototype of the lead record from the lead maintenance tab with the details section fully expanded."
+              }, 
+            ],
+          },
+
+          {
+            type: "Style Guide",
+            description: "",
+            deliverables: [
+              {
+                image: "./img/JX-SEM_Style-Guide.png",
+                title: "Common Elements of the JX Style Guide on Confluence featuring the lead record from the lead maintenance tab."
+              }, 
+            ],
+          },
+
+        ],
+        skills: ["UX", "Prototyping"],
         tools: [
-          "Adobe PhotoShop",
-          "Adobe Illustrator",
           "Adobe InDesign",
           "Visual Studio"
         ],
