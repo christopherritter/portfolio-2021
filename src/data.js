@@ -408,7 +408,7 @@ export const employers = [{
         imageDesc: "Lead Management for Jenzabar JX",
         image: "./img/JX-SEM_Lead-Management.png",
         role: "UX Designer",
-        summary: "Provided UX design assistance to local, remote, and offshore developers working on updates to Jenzabar JX.",
+        summary: "Designed the new Lead Manager for Jenzabar JX to help lead managers convert leads into engaged candidates for their schools.",
         problem: "",
         solution: "",
         process: ["Requirements Gathering", "Low Fidelity Wireframes", "Internal Review", "Functional Prototype", "Style Guide"],
