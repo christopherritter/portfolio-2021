@@ -264,7 +264,7 @@ export const employers = [{
           deliverables: [{
             title: "Jenzabar ICS Design System",
             image: "./img/JICS9_CX-Mobile-Theme.png",
-            summary: "Created a new base theme for Jenzabar ICS which incorporated the new branding guidlines for Jenzabar products. Special attention was given to the Sass variables so as to make customization easier for the end user."
+            summary: "Created a new base theme for Jenzabar ICS which incorporated the new branding guidelines for Jenzabar products. Special attention was given to the Sass variables so as to make customization easier for the end user."
           }]
         }, ],
         skills: [
@@ -408,16 +408,16 @@ export const employers = [{
         imageDesc: "Lead Management for Jenzabar JX",
         image: "./img/JX-SEM_Lead-Management.png",
         role: "UX Designer",
-        summary: "Designed the new Lead Manager for Jenzabar JX to help lead managers convert leads into engaged candidates for their schools.",
-        problem: "",
-        solution: "",
+        summary: "Designed the new Lead Manager for Jenzabar JX to help convert leads into engaged candidates.",
+        problem: "Schools usually purchase names of leads from separate vendors and reach out to the names through digital marketing in order to convert the lead into an engaged candidate.",
+        solution: "Create a set of features for Jenzabar JX to import and manage leads according to a pre-defined communication plan and convert them into candidates for the institution.",
         process: ["Requirements Gathering", "Low Fidelity Wireframes", "Internal Review", "Functional Prototype", "Style Guide"],
         tasks: [
 
 
           {
             type: "Requirements Gathering",
-            description: "",
+            description: "The user stories written by the Product Manager were a big part of understanding the user goals. They provided context to better understand the new features from a variety of user perspectives, including the goals of the Enrollment VP as well as the primary duties of the Leads Manager. User stories also helped contextualize the developer issues which were entered into JIRA that related to the UI of the product.",
             deliverables: [
               {
                 image: "./img/JX-SEM_User-Stories_Lead-Management.png",
@@ -431,7 +431,7 @@ export const employers = [{
 
           {
             type: "Low Fidelity Wireframes",
-            description: "",
+            description: "After gathering all of the requirements, I used the library of visual components that I had been creating in Adobe InDesign to create a low fidelity set of wirefames to review with the PM. These were exported as an Adobe PDF along with additional links between the pages to show the user flow through the application. Comments gathered from the team were added to the document and uploaded to JIRA to assist with future revisions.",
             deliverables: [
               {
                 image: "./img/JX-SEM_Wireframes_Lead-Maintenance.png",
@@ -446,7 +446,7 @@ export const employers = [{
 
           {
             type: "Functional Prototype",
-            description: "",
+            description: "Once the final wireframes were approved by the Product Manager, I created a new tab for Lead maintenance in my functional prototype. I built the prototype using Bootstrap along with all of the fonts, colors, images, and layout currently being used by the product. Screenshots of the prototype were added to the corresponding JIRA issue. Any variations to the user interface were subsequently added to the JX Style Guide.",
             deliverables: [
               {
                 image: "./img/JX-SEM_Prototype_Lead-Maintenance.png",
@@ -465,7 +465,7 @@ export const employers = [{
 
           {
             type: "Style Guide",
-            description: "",
+            description: "The JX Style Guide was an evolution of the UI Specifications which were in use by the development team. The changes primarily focused on the design and layout of individual components, as opposed to detailing the functionality of the new pages. Any variations to the current styles were added to the official document that was maintained on Confluence. These included component names alongside screenshots of their implementations.",
             deliverables: [
               {
                 image: "./img/JX-SEM_Style-Guide.png",
@@ -481,6 +481,11 @@ export const employers = [{
           "Visual Studio"
         ],
         tech: ["SmartGWT"],
+        results: {
+          finalResult: "The design of the new Lead Management for Jenzabar JX was a breakthrough in delivering high quality design assets to offshore developers. Visualizing the fonts, colors, and icons alongside the intended functionality marked a new era towards improving the look and feel of products built using SmartGWT components.",
+          keyLearnings: "However, even though it was possible to recreate Java-based SmartGWT components using Bootstrap HTML/CSS, there was still quite a difference in how the components ultimately appeared in the product.",
+          nextSteps: "While rough prototypes are useful to verify concepts in the ideation phase, an actual environment that consists of the current technology stack would be more useful when visualizing new features in production."
+        },
         path: "jx"
       }
 
