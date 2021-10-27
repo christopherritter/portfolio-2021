@@ -294,7 +294,7 @@ export const employers = [{
         imageDesc: "The home screen for Jenzabar CX 10 for Windows along with a prototype of the Vendor Entry screen.",
         problem: "Jenzabar CX users were primarily accessing their data through a Telnet client. The outdated interface was challenging for new users and somewhat embarrassing to look at.",
         solution: "Create a new desktop application for Mac and Windows that incorporates a modern app-based approach to a variety of customizable screens and applications.",
-        process: ["Requirements Gathering", "Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Testing", "Sentiment Analysis", "Executive Summary", "Visual Design"],
+        process: ["Requirements Gathering", "Competitive Audit", "Low Fidelity Wireframes", "Interactive Prototype", "Usability Testing", "Sentiment Analysis", "Research Reporting", "Visual Design"],
         tasks: [
 
           {
@@ -352,11 +352,11 @@ export const employers = [{
           },
 
           {
-            type: "Executive Summary",
-            description: "An executive summary was written for internal folks to get a better idea of what our customers thought about the new Jenzabar CX 10. It included the methodology, key takeaways, along with anonymous quotes taken directly from the customers. It also included some areas of the design that need improvement, plus other discoveries that came out of the interviews but weren't a part of the discussion guide.",
+            type: "Research Reporting",
+            description: "A research report was written for internal folks to get a better idea of what our customers thought about the new Jenzabar CX 10. It included the methodology, key takeaways, along with anonymous quotes taken directly from the customers. It also included some areas of the design that need improvement, plus other discoveries that came out of the interviews but weren't a part of the discussion guide.",
             deliverables: [{
               image: "./img/CX10_Executive-Summary.png",
-              title: "Executive Summary of the sentiment analysis for the new Jenzabar CX 10."
+              title: "Research report of the sentiment analysis for the new Jenzabar CX 10."
             }, ],
           },
 
@@ -418,60 +418,56 @@ export const employers = [{
           {
             type: "Requirements Gathering",
             description: "The user stories written by the Product Manager were a big part of understanding the user goals. They provided context to better understand the new features from a variety of user perspectives, including the goals of the Enrollment VP as well as the primary duties of the Leads Manager. User stories also helped contextualize the developer issues which were entered into JIRA that related to the UI of the product.",
-            deliverables: [
-              {
+            deliverables: [{
                 image: "./img/JX-SEM_User-Stories_Lead-Management.png",
                 title: "User Stories document for Lead Management."
               },
               {
-              image: "./img/JX-SEM_Requirements-Gathering_Lead-Management.png",
-              title: "JIRA list of features to support the management of leads."
-            }, ],
+                image: "./img/JX-SEM_Requirements-Gathering_Lead-Management.png",
+                title: "JIRA list of features to support the management of leads."
+              },
+            ],
           },
 
           {
             type: "Low Fidelity Wireframes",
             description: "After gathering all of the requirements, I used the library of visual components that I had been creating in Adobe InDesign to create a low fidelity set of wirefames to review with the PM. These were exported as an Adobe PDF along with additional links between the pages to show the user flow through the application. Comments gathered from the team were added to the document and uploaded to JIRA to assist with future revisions.",
-            deliverables: [
-              {
+            deliverables: [{
                 image: "./img/JX-SEM_Wireframes_Lead-Maintenance.png",
                 title: "Low fidelity wirefame of the lead maintenance tab for Lead Management."
-              }, 
+              },
               {
                 image: "./img/JX-SEM_Wireframes_Lead-Maintenance_Lead.png",
                 title: "Low fidelity wirefame of the lead view of the lead maintenance tab."
-              }, 
+              },
             ],
           },
 
           {
             type: "Functional Prototype",
             description: "Once the final wireframes were approved by the Product Manager, I created a new tab for Lead maintenance in my functional prototype. I built the prototype using Bootstrap along with all of the fonts, colors, images, and layout currently being used by the product. Screenshots of the prototype were added to the corresponding JIRA issue. Any variations to the user interface were subsequently added to the JX Style Guide.",
-            deliverables: [
-              {
+            deliverables: [{
                 image: "./img/JX-SEM_Prototype_Lead-Maintenance.png",
                 title: "Functional prototype of the lead maintenance tab for Lead Management."
-              }, 
+              },
               {
                 image: "./img/JX-SEM_Prototype_Lead-Maintenance_Lead.png",
                 title: "Functional prototype of the lead record from the lead maintenance tab."
-              }, 
+              },
               {
                 image: "./img/JX-SEM_Prototype_Lead-Maintenance_Lead-Collapsed.png",
                 title: "Functional prototype of the lead record from the lead maintenance tab with the details section fully expanded."
-              }, 
+              },
             ],
           },
 
           {
             type: "Style Guide",
             description: "The JX Style Guide was an evolution of the UI Specifications which were in use by the development team. The changes primarily focused on the design and layout of individual components, as opposed to detailing the functionality of the new pages. Any variations to the current styles were added to the official document that was maintained on Confluence. These included component names alongside screenshots of their implementations.",
-            deliverables: [
-              {
-                image: "./img/JX-SEM_Style-Guide.png",
-                title: "Common Elements of the JX Style Guide on Confluence featuring the lead record from the lead maintenance tab."
-              }, 
-            ],
+            deliverables: [{
+              image: "./img/JX-SEM_Style-Guide.png",
+              title: "Common Elements of the JX Style Guide on Confluence featuring the lead record from the lead maintenance tab."
+            }, ],
           },
 
         ],
@@ -574,67 +570,173 @@ export const employers = [{
     startDate: 2010,
     endDate: 2013,
     location: "Miamisburg, Ohio",
-    projects: [{
-      name: "Lexis Advance",
-      role: "UX Designer",
-      summary: "Designed the next generation of case law research on Lexis Advance for the web, iOS, and Android platforms.",
-      problem: "",
-      solution: "",
-      tasks: [{
-          description: "Created annotated wireframes to support the development of Lexis Advance.",
-        },
-        {
-          description: "Conducted concept testing and usability research with legal professionals, and delivered top level reports of my discussions to primary stakeholders. ",
-        },
-        {
-          description: "Lead brainstorming workshops with legal professionals using Gamestorming techniques to generate new ideas.",
-        },
-        {
-          description: "Founding member of the Customer Discovery & Innovation team which designed, prototyped, and tested the most popular concepts from our innovation pipeline.",
-        },
-        {
-          description: "Design Lead for several innovative products including Lexis Answers.",
-        }
-      ],
-      skills: ["UX", "Brainstorming", "Testing", "Research", "Analysis", "Reporting", "Prototyping"],
-      path: "lexisadvance"
-    }]
+    projects: [
+
+      {
+        name: "Lexis Advance",
+        role: "UX Designer",
+        summary: "Designed the next generation of case law research on Lexis Advance for the web, iOS, and Android platforms.",
+        problem: "",
+        solution: "",
+        tasks: [{
+            description: "Created annotated wireframes to support the development of Lexis Advance.",
+          },
+          {
+            description: "Conducted concept testing and usability research with legal professionals, and delivered top level reports of my discussions to primary stakeholders. ",
+          },
+          {
+            description: "Lead brainstorming workshops with legal professionals using Gamestorming techniques to generate new ideas.",
+          },
+          {
+            description: "Founding member of the Customer Discovery & Innovation team which designed, prototyped, and tested the most popular concepts from our innovation pipeline.",
+          },
+          {
+            description: "Design Lead for several innovative products including Lexis Answers.",
+          }
+        ],
+        skills: ["UX", "Brainstorming", "Testing", "Research", "Analysis", "Reporting", "Prototyping"],
+        path: "lexisnexis"
+      },
+
+
+      {
+        name: "Lexis Practice Advisor",
+        product: "Lexis Advance",
+        role: "UX Designer",
+        date: "April 2021",
+        image: "./img/Lexis_Practice-Advisor.png",
+        imageDesc: "The 2017 release of Lexis Practice Advisor and the Florida Businesses & Commercial practice area.",
+        summary: "Redesigned Lexis Practice Advisor to help transactional lawyers navigate through forms and precedence for specific practice areas.",
+        problem: "Transactional lawyers are challenged to stay up to date with all of the requisite forms and precedents for a specific practice area.",
+        solution: "Create a navigational widget that enables users to explore the context of any given practice area in order to complete a transaction.",
+        process: ["Requirements Gathering", "Brainstorming Session", "Competitive Audit", "Low Fidelity Wireframes", "Concept Validation", "Research Reporting"],
+        tasks: [
+
+          {
+            type: "Requirements Gathering",
+            description: "",
+            deliverables: [{
+                title: "Customer imperatives for practicing transactional law gathered by the CDI team.",
+                image: "./img/Lexis_Practice-Advisor_Customer-Imperatives.png",
+              },
+              {
+                title: "Small Law Associate Persona created by the CDI Team.",
+                image: "./img/Lexis_Practice-Advisor_Persona_SL-Associate.png",
+              },
+              {
+                title: "Survey of transactional issues found on select legal websites.",
+                image: "./img/Lexis_Practice-Advisor_Firm-Website-Topic-Survey.png",
+              },
+            ],
+          },
+
+          {
+            type: "Brainstorming Session",
+            description: "",
+            deliverables: [{
+              title: "Photograph of the results of the white boarding session for Lexis Practice Advisor.",
+              image: "./img/Lexis_Practice-Advisor_Mind-map.png"
+            }],
+          },
+
+          {
+            type: "Competitive Audit",
+            description: "",
+            deliverables: [{
+              title: "Screenshots gathered from Socrates and LegalZoom websites.",
+              image: "./img/Lexis_Practice-Advisor_Competitive-Audit.png"
+            }],
+          },
+
+          {
+            type: "Low Fidelity Wireframes",
+            description: "",
+            deliverables: [{
+                title: "Browsing concept for Lexis Practice Advisor.",
+                image: "./img/Lexis_Practice-Advisor_Concept_Browse.png"
+              },
+              {
+                title: "Search bar concept for Lexis Practice Advisor.",
+                image: "./img/Lexis_Practice-Advisor_Concept_Search-bar.png"
+              },
+              {
+                title: "Fly-out concept for Lexis Practice Advisor.",
+                image: "./img/Lexis_Practice-Advisor_Concept_Legal-Topics.png"
+              },
+            ],
+          },
+
+          {
+            type: "Concept Validation",
+            description: "",
+            deliverables: [{
+              title: "Overview of the research methods used to validate the new concepts.",
+              image: "./img/Lexis_Practice-Advisor_Customer-Research.png"
+            }],
+          },
+
+          {
+            type: "Research Reporting",
+            description: "",
+            deliverables: [{
+              title: "Customer feedback comparing the two new navigation types.",
+              image: "./img/Lexis_Practice-Advisor_Feedback_Legal-Topics.png"
+            },{
+              title: "Customer feedback on the new flyout navigation concept.",
+              image: "./img/Lexis_Practice-Advisor_Feedback_Fly-out.png"
+            }],
+          },
+
+        ],
+        skills: ["UX", "Brainstorming", "Testing", "Research", "Analysis", "Reporting", "Prototyping"],
+        path: "lexisnexis"
+      },
+
+
+    ],
   },
+
   {
     title: "Experience Planner",
     name: "Bridge Worldwide",
     startDate: 2009,
     endDate: 2010,
     location: "Cincinnati, Ohio",
-    projects: [{
-      name: "Pearle Vision",
-      role: "UX Designer",
-      summary: "Created a mobile try-on tool for Pearl Vision customers on the iOS and Android platforms.",
-      problem: "",
-      solution: "",
-      tasks: [{
-          description: "Planned the digital experience of social, mobile, and web applications for corporate clients that included P&G, Pearle Vision, and Red Bull.",
-        },
-        {
-          description: "Lead brainstorming sessions with creative, technical, and business leads to generate new ideas.",
-        },
-        {
-          description: "Illustrated user flows, site maps, and wireframes to assist the design and development teams.",
-        },
-        {
-          description: "Documented features and functionality for project management, and provided competitive analysis of similar products on the market.",
-        },
-        {
-          description: "Conducted usability testing with potential customers and reported insights back to the team.",
-        },
-        {
-          description: "Presented initial concepts, customer feedback, and other deliverables to the clients.",
-        }
-      ],
-      skills: ["UX", "Social Media", "Brainstorming", "Research", "Analysis", "Reporting"],
-      tools: ["Microsoft Visio"],
-      path: "pearlevision"
-    }]
+    projects: [
+
+
+      {
+        name: "Pearle Vision",
+        role: "UX Designer",
+        summary: "Created a mobile try-on tool for Pearl Vision customers on the iOS and Android platforms.",
+        problem: "",
+        solution: "",
+        tasks: [{
+            description: "Planned the digital experience of social, mobile, and web applications for corporate clients that included P&G, Pearle Vision, and Red Bull.",
+          },
+          {
+            description: "Lead brainstorming sessions with creative, technical, and business leads to generate new ideas.",
+          },
+          {
+            description: "Illustrated user flows, site maps, and wireframes to assist the design and development teams.",
+          },
+          {
+            description: "Documented features and functionality for project management, and provided competitive analysis of similar products on the market.",
+          },
+          {
+            description: "Conducted usability testing with potential customers and reported insights back to the team.",
+          },
+          {
+            description: "Presented initial concepts, customer feedback, and other deliverables to the clients.",
+          }
+        ],
+        skills: ["UX", "Social Media", "Brainstorming", "Research", "Analysis", "Reporting"],
+        tools: ["Microsoft Visio"],
+        path: "pearlevision"
+      }
+
+
+    ]
   }
 ];
 
